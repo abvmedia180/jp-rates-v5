@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Joseph Psychiatry Practice Intelligence Platform V2.8 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,8 +10,8 @@
 <style>
 :root{--bg:#080a0f;--bg2:#0c0f16;--bg3:#111521;--bg4:#161b2b;--bg5:#1c2235;--bd:#1e2740;--bd2:#283350;--mt:#5b6585;--tx:#9ba4be;--br:#ccd6f6;--wh:#e6f1ff;--ac:#00ff88;--ac2:#00cc6a;--acd:rgba(0,255,136,.06);--ac10:rgba(0,255,136,.1);--ac20:rgba(0,255,136,.2);--bl:#4fc3f7;--bld:rgba(79,195,247,.08);--am:#ffb74d;--amd:rgba(255,183,77,.08);--rd:#ff5252;--rdd:rgba(255,82,82,.08);--pp:#b388ff;--ppd:rgba(179,136,255,.08);--R:10px;--Rs:6px;--sans:'Inter',system-ui,sans-serif;--disp:'Fraunces',serif}
 *{margin:0;padding:0;box-sizing:border-box}
-html{overflow-x:hidden}
-body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100vh;overflow-x:hidden;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+*,*::before,*::after{box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100vh;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
 body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,136,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,136,.012) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0}
 .hero{position:relative;padding:56px 24px 44px;text-align:center;background:linear-gradient(135deg,rgba(0,255,136,.04) 0%,rgba(0,136,255,.03) 50%,var(--bg) 100%);border-bottom:1px solid var(--bd);z-index:1;overflow:hidden}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,255,136,.06) 0%,transparent 70%);pointer-events:none}
@@ -27,10 +28,10 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .ni::-webkit-scrollbar{display:none}
 .nt{padding:12px 13px;font-size:12px;font-weight:600;color:var(--mt);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s;user-select:none}
 .nt:hover{color:var(--tx)}.nt.a{color:var(--ac);border-bottom-color:var(--ac)}
-.con{max-width:1440px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+.con{max-width:1440px;margin:0 auto;padding:0 20px;position:relative;z-index:1;box-sizing:border-box}
 .sec{display:none;padding:28px 0;animation:fu .35s ease}.sec.a{display:block}
 @keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.card{background:var(--bg3);border:1px solid var(--bd);border-radius:var(--R);padding:20px;margin-bottom:16px;position:relative;overflow:hidden}
+.card{background:var(--bg3);border:1px solid var(--bd);border-radius:var(--R);padding:20px;margin-bottom:16px;position:relative;overflow:hidden;word-wrap:break-word;overflow-wrap:break-word}
 .card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--ac20),transparent)}
 .card:hover{border-color:var(--bd2)}
 .tl{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ac);margin-bottom:4px}
@@ -130,6 +131,7 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:3px;bac
 .deep-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:8px}
 .deep-scroll table{min-width:500px}
 .calc-grid{display:grid;grid-template-columns:360px 1fr;gap:20px}
+.calc-grid>div{min-width:0;overflow-x:auto}
 .scroll-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--bd);border-radius:var(--Rs);margin-bottom:8px}
 .scroll-wrap::-webkit-scrollbar{height:6px}
 .scroll-wrap::-webkit-scrollbar-track{background:var(--bg4);border-radius:3px}
@@ -1116,7 +1118,7 @@ function rCp(){
 rO();bHF();rH();bRF();rRk();pCD();bSF();rSC();initP();initRv();initPt();initRm();initSc();initGr();initCp();rDA();
 </script>
 <footer style="margin-top:40px;padding:32px 32px;border-top:1px solid rgba(255,255,255,.06);background:rgba(0,0,0,.15);text-align:center">
-<div style="font-size:12px;color:rgba(255,255,255,.35);margin-bottom:16px">Joseph Psychiatry PLLC · Practice Intelligence Platform V2.7 · Confidential</div>
+<div style="font-size:12px;color:rgba(255,255,255,.35);margin-bottom:16px">Joseph Psychiatry PLLC · Practice Intelligence Platform V2.8 · Confidential</div>
 <div style="font-size:11px;color:rgba(255,255,255,.25);line-height:1.8;max-width:800px;margin:0 auto 16px">Reimbursement rates sourced from Headway for MD-level providers, February 2026. All revenue projections and scaling models assume NP/PA staffing at 85% of MD reimbursement. These figures do not reflect direct credentialing rates, which are typically lower than Headway rates. Billing fee, overhead, and malpractice estimates are approximations and may vary by carrier, state, and provider history.</div>
 <div style="font-size:11px;color:rgba(255,255,255,.25);line-height:1.8">This platform is a strategic planning tool, not financial or legal advice. If you don't like it, kiss my ass. — Abe Varughese, COO</div>
 </footer>
