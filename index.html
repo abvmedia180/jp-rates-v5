@@ -9,6 +9,7 @@
 <style>
 :root{--bg:#080a0f;--bg2:#0c0f16;--bg3:#111521;--bg4:#161b2b;--bg5:#1c2235;--bd:#1e2740;--bd2:#283350;--mt:#5b6585;--tx:#9ba4be;--br:#ccd6f6;--wh:#e6f1ff;--ac:#00ff88;--ac2:#00cc6a;--acd:rgba(0,255,136,.06);--ac10:rgba(0,255,136,.1);--ac20:rgba(0,255,136,.2);--bl:#4fc3f7;--bld:rgba(79,195,247,.08);--am:#ffb74d;--amd:rgba(255,183,77,.08);--rd:#ff5252;--rdd:rgba(255,82,82,.08);--pp:#b388ff;--ppd:rgba(179,136,255,.08);--R:10px;--Rs:6px;--sans:'Inter',system-ui,sans-serif;--disp:'Fraunces',serif}
 *{margin:0;padding:0;box-sizing:border-box}
+html{overflow-x:hidden}
 body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100vh;overflow-x:hidden;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
 body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,136,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,136,.012) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0}
 .hero{position:relative;padding:56px 24px 44px;text-align:center;background:linear-gradient(135deg,rgba(0,255,136,.04) 0%,rgba(0,136,255,.03) 50%,var(--bg) 100%);border-bottom:1px solid var(--bd);z-index:1;overflow:hidden}
@@ -41,7 +42,7 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .fc{padding:7px 14px;font-size:12px;font-weight:600;border-radius:4px;cursor:pointer;transition:all .2s;border:1px solid var(--bd);background:var(--bg3);color:var(--tx);user-select:none}
 .fc:hover{border-color:var(--ac);color:var(--br)}.fc.a{background:var(--ac);border-color:var(--ac);color:var(--bg)}
 .tw{overflow-x:auto;border-radius:var(--Rs);border:1px solid var(--bd)}
-table{width:100%;border-collapse:collapse;min-width:500px}
+table{width:100%;border-collapse:collapse}
 thead th{background:var(--bg4);color:var(--mt);font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:10px 12px;text-align:left;border-bottom:1px solid var(--bd);cursor:pointer;user-select:none;white-space:nowrap}
 thead th:hover{color:var(--br)}
 thead th.sa::after{content:' ↑';color:var(--ac)}
@@ -1115,7 +1116,7 @@ function rCp(){
 rO();bHF();rH();bRF();rRk();pCD();bSF();rSC();initP();initRv();initPt();initRm();initSc();initGr();initCp();rDA();
 </script>
 <footer style="margin-top:40px;padding:32px 32px;border-top:1px solid rgba(255,255,255,.06);background:rgba(0,0,0,.15);text-align:center">
-<div style="font-size:12px;color:rgba(255,255,255,.35);margin-bottom:16px">Joseph Psychiatry PLLC · Practice Intelligence Platform V2.6 · Confidential</div>
+<div style="font-size:12px;color:rgba(255,255,255,.35);margin-bottom:16px">Joseph Psychiatry PLLC · Practice Intelligence Platform V2.7 · Confidential</div>
 <div style="font-size:11px;color:rgba(255,255,255,.25);line-height:1.8;max-width:800px;margin:0 auto 16px">Reimbursement rates sourced from Headway for MD-level providers, February 2026. All revenue projections and scaling models assume NP/PA staffing at 85% of MD reimbursement. These figures do not reflect direct credentialing rates, which are typically lower than Headway rates. Billing fee, overhead, and malpractice estimates are approximations and may vary by carrier, state, and provider history.</div>
 <div style="font-size:11px;color:rgba(255,255,255,.25);line-height:1.8">This platform is a strategic planning tool, not financial or legal advice. If you don't like it, kiss my ass. — Abe Varughese, COO</div>
 </footer>
