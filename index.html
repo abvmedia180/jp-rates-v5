@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joseph Psychiatry Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700;9..144,800&family=Fraunces:ital,opsz,wght@1,9..144,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080a0f;--bg2:#0c0f16;--bg3:#111521;--bg4:#161b2b;--bg5:#1c2235;--bd:#1e2740;--bd2:#283350;--mt:#5b6585;--tx:#9ba4be;--br:#ccd6f6;--wh:#e6f1ff;--ac:#00ff88;--ac2:#00cc6a;--acd:rgba(0,255,136,.06);--ac10:rgba(0,255,136,.1);--ac20:rgba(0,255,136,.2);--bl:#4fc3f7;--bld:rgba(79,195,247,.08);--am:#ffb74d;--amd:rgba(255,183,77,.08);--rd:#ff5252;--rdd:rgba(255,82,82,.08);--pp:#b388ff;--ppd:rgba(179,136,255,.08);--R:10px;--Rs:6px;--sans:'Inter',system-ui,sans-serif;--disp:'Fraunces',serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:var(--tx);min-height:100vh;overflow-x:hidden;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,255,136,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,136,.012) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;z-index:0}
+.hero{position:relative;padding:56px 24px 44px;text-align:center;background:linear-gradient(135deg,rgba(0,255,136,.04) 0%,rgba(0,136,255,.03) 50%,var(--bg) 100%);border-bottom:1px solid var(--bd);z-index:1;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 0%,rgba(0,255,136,.06) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,var(--ac),transparent)}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:1.2px;color:var(--ac);text-transform:uppercase;padding:5px 14px;border:1px solid var(--ac20);border-radius:3px;background:var(--acd);margin-bottom:16px}
+.hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--ac);box-shadow:0 0 8px var(--ac);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:400;color:var(--wh);letter-spacing:0px;margin-bottom:8px;position:relative;z-index:1;font-family:var(--sans)}
+.hero h1 .brand{font-family:'Playfair Display',Georgia,serif;font-weight:600;letter-spacing:-.5px}
+.hero h1 em{font-family:var(--disp);font-style:italic;color:var(--ac);font-weight:700}
+.hero>p{font-size:14px;color:var(--mt);max-width:520px;margin:0 auto;line-height:1.6}
+.nb{position:sticky;top:0;z-index:100;background:rgba(8,10,15,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);padding:0 16px}
+.ni{max-width:1440px;margin:0 auto;display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.ni::-webkit-scrollbar{display:none}
+.nt{padding:12px 13px;font-size:12px;font-weight:600;color:var(--mt);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s;user-select:none}
+.nt:hover{color:var(--tx)}.nt.a{color:var(--ac);border-bottom-color:var(--ac)}
+.con{max-width:1440px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+.sec{display:none;padding:28px 0;animation:fu .35s ease}.sec.a{display:block}
+@keyframes fu{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--bg3);border:1px solid var(--bd);border-radius:var(--R);padding:20px;margin-bottom:16px;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--ac20),transparent)}
+.card:hover{border-color:var(--bd2)}
+.tl{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ac);margin-bottom:4px}
+.tl2{font-family:var(--disp);font-size:22px;font-weight:700;color:var(--wh);margin-bottom:6px}
+.ts{font-size:14px;color:var(--mt);margin-bottom:24px;line-height:1.6}
+.ct{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--br);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.ct::before{content:'';width:3px;height:14px;background:var(--ac);border-radius:2px}
+.fr{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.fc{padding:7px 14px;font-size:12px;font-weight:600;border-radius:4px;cursor:pointer;transition:all .2s;border:1px solid var(--bd);background:var(--bg3);color:var(--tx);user-select:none}
+.fc:hover{border-color:var(--ac);color:var(--br)}.fc.a{background:var(--ac);border-color:var(--ac);color:var(--bg)}
+.tw{overflow-x:auto;border-radius:var(--Rs);border:1px solid var(--bd)}
+table{width:100%;border-collapse:collapse;min-width:500px}
+thead th{background:var(--bg4);color:var(--mt);font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:10px 12px;text-align:left;border-bottom:1px solid var(--bd);cursor:pointer;user-select:none;white-space:nowrap}
+thead th:hover{color:var(--br)}
+thead th.sa::after{content:' ↑';color:var(--ac)}
+thead th.sd::after{content:' ↓';color:var(--ac)}
+tbody td{padding:10px 12px;font-size:13px;border-bottom:1px solid var(--bd);white-space:nowrap;font-variant-numeric:tabular-nums}
+tbody tr{transition:background .15s}tbody tr:hover{background:rgba(0,255,136,.02)}
+.h5{color:#00ff88}.h4{color:#66ffa6}.h3{color:var(--tx)}.h2{color:#ffb74d}.h1c{color:#ff5252}
+.bar{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.bar .lb{width:80px;font-size:12px;font-weight:600;color:var(--tx);text-align:right;flex-shrink:0}
+.bar .tk{flex:1;height:26px;background:var(--bg4);border-radius:4px;overflow:hidden;border:1px solid var(--bd)}
+.bar .fl{height:100%;border-radius:3px;transition:width .8s cubic-bezier(.22,1,.36,1);display:flex;align-items:center;padding-left:10px;font-size:12px;font-weight:700;color:var(--bg);min-width:fit-content}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:24px}
+.sb{background:var(--bg3);border:1px solid var(--bd);border-radius:var(--Rs);padding:16px;position:relative;overflow:hidden}
+.sb::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--ac20),transparent)}
+.sb .sl{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--mt);margin-bottom:6px}
+.sb .sv{font-family:var(--disp);font-size:26px;font-weight:700}
+.sb .su{font-size:12px;color:var(--mt);margin-top:3px}
+.rg{padding:14px;background:var(--bg3);border:1px solid var(--bd);border-radius:var(--Rs);margin-bottom:8px}
+.rg:hover{border-color:var(--bd2)}
+.rg-head{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.rg-rank{font-family:var(--disp);font-size:20px;font-weight:700;width:30px;text-align:center}
+.rg-val{font-family:var(--disp);font-size:18px;font-weight:700;margin-left:auto}
+.rg-items{display:flex;flex-wrap:wrap;gap:4px;margin-left:40px}
+.rg-tag{font-size:11px;font-weight:600;color:var(--br);background:var(--bg4);padding:3px 8px;border-radius:4px;border:1px solid var(--bd)}
+.sbs{display:grid;grid-template-columns:1fr 40px 1fr;gap:0;align-items:start}
+.sbsc{background:var(--bg3);border:1px solid var(--bd);border-radius:var(--Rs);padding:18px}
+.sbsv{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--mt);padding-top:40px}
+.sbst{font-size:14px;font-weight:700;color:var(--wh);text-align:center;margin-bottom:12px}
+.sbsr{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--bd);font-size:13px}
+.sbsr:last-child{border:none}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.cc{background:var(--bg3);border:1px solid var(--bd);border-radius:var(--Rs);padding:18px;transition:all .25s}
+.cc:hover{border-color:var(--ac20);box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.sel{appearance:none;background:var(--bg3);border:1px solid var(--bd);border-radius:var(--Rs);padding:9px 32px 9px 12px;font-size:13px;font-weight:500;color:var(--br);cursor:pointer;font-family:var(--sans);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%235b6585'%3E%3Cpath d='M5 7.5L0.5 2.5h9z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center}
+.sel:hover,.sel:focus{border-color:var(--ac);outline:none}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+.d1{background:var(--bl)}.d2{background:var(--pp)}.d3{background:var(--am)}.d4{background:var(--ac)}
+.slider-group{margin-bottom:16px}
+.slider-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.slider-label .sn{font-size:13px;font-weight:500;color:var(--tx)}
+.slider-label .sv2{font-family:var(--disp);font-size:18px;font-weight:700;color:var(--ac);min-width:80px;text-align:right}
+input[type=range]{-webkit-appearance:none;width:100%;height:4px;border-radius:2px;background:var(--bg4);outline:none;border:1px solid var(--bd)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:3px;background:var(--ac);cursor:pointer;box-shadow:0 0 12px rgba(0,255,136,.3);border:2px solid var(--bg)}
+input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:3px;background:var(--ac);cursor:pointer;border:2px solid var(--bg)}
+.chk-group{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chk{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:4px;border:1px solid var(--bd);cursor:pointer;transition:all .2s;user-select:none;font-size:12px;font-weight:600;color:var(--tx)}
+.chk:hover{border-color:var(--ac)}.chk.on{background:var(--acd);border-color:var(--ac);color:var(--ac)}
+.chk input{display:none}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:20px}
+.res-card{background:var(--bg4);border:1px solid var(--bd);border-radius:var(--Rs);padding:16px;text-align:center;position:relative;overflow:hidden}
+.res-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px}
+.res-card.profit::after{background:var(--ac)}.res-card.revenue::after{background:var(--bl)}.res-card.cost::after{background:var(--am)}.res-card.loss::after{background:var(--rd)}.res-card.neutral::after{background:var(--tx)}.res-card.staff::after{background:var(--pp)}
+.rc-label{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--mt);margin-bottom:6px}
+.rc-val{font-family:var(--disp);font-size:24px;font-weight:700}
+.rc-sub{font-size:11px;color:var(--mt);margin-top:3px}
+.profit .rc-val{color:var(--ac)}.revenue .rc-val{color:var(--bl)}.cost .rc-val{color:var(--am)}.loss .rc-val{color:var(--rd)}.neutral .rc-val{color:var(--br)}.staff .rc-val{color:var(--pp)}
+.num-input{background:var(--bg4);border:1px solid var(--bd);border-radius:var(--Rs);padding:9px 12px;font-size:14px;font-weight:600;color:var(--wh);width:100%;font-family:var(--sans);transition:border-color .2s}
+.num-input:hover,.num-input:focus{border-color:var(--ac);outline:none}
+.input-group{margin-bottom:14px}
+.input-group label{display:block;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mt);margin-bottom:5px}
+.bd-table{width:100%;border-collapse:collapse;min-width:auto}
+.bd-table th{text-align:left;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mt);padding:9px 10px;border-bottom:1px solid var(--bd);background:var(--bg4)}
+.bd-table td{padding:9px 10px;font-size:13px;border-bottom:1px solid var(--bd);font-variant-numeric:tabular-nums}
+.bd-table tr:hover{background:rgba(0,255,136,.02)}
+.profit-bar{height:32px;border-radius:4px;overflow:hidden;display:flex;border:1px solid var(--bd)}
+.pb-rev,.pb-cost{height:100%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.port-row{display:grid;grid-template-columns:140px 70px 80px 1fr 40px;gap:8px;align-items:center;padding:10px;background:var(--bg4);border:1px solid var(--bd);border-radius:var(--Rs);margin-bottom:6px}
+.port-row .pr-del{cursor:pointer;color:var(--rd);font-size:14px;text-align:center;opacity:.5;transition:opacity .2s}
+.port-row .pr-del:hover{opacity:1}
+.tl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px}
+.tl-month{background:var(--bg4);border:1px solid var(--bd);border-radius:var(--Rs);padding:10px;text-align:center}
+.scn-grid{display:grid;grid-template-columns:1fr 50px 1fr;gap:0;align-items:start}
+.scn-col{background:var(--bg3);border:1px solid var(--bd);border-radius:var(--Rs);padding:18px}
+.scn-vs{display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--mt);padding-top:30px}
+.scn-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--bd);font-size:13px}
+.scn-row:last-child{border:none}
+.fl2{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--mt);margin-bottom:6px}
+#sec-deep{overflow-x:hidden;max-width:100%}
+#sec-deep .card{overflow:hidden;max-width:100%}
+#sec-deep table{width:100%;table-layout:fixed;border-collapse:collapse}
+#sec-deep td,#sec-deep th{word-wrap:break-word;overflow-wrap:break-word;white-space:normal}
+#sec-deep .bd-table{table-layout:auto}
+#sec-deep .bd-table td,#sec-deep .bd-table th{white-space:nowrap}
+#sec-deep .bd-table td.wrap{white-space:normal;max-width:280px;font-size:11px}
+.scroll-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--bd);border-radius:var(--Rs);margin-bottom:8px}
+.scroll-wrap::-webkit-scrollbar{height:6px}
+.scroll-wrap::-webkit-scrollbar-track{background:var(--bg4);border-radius:3px}
+.scroll-wrap::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:3px}
+.scroll-wrap::-webkit-scrollbar-thumb:hover{background:var(--mt)}
+.deep-filter{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.deep-chip{padding:4px 12px;font-size:11px;border-radius:20px;border:1px solid var(--bd);color:var(--mt);cursor:pointer;transition:all .2s;background:transparent;font-family:var(--sans)}
+.deep-chip:hover{border-color:var(--ac);color:var(--ac)}
+.deep-chip.active{background:var(--ac);color:var(--bg);border-color:var(--ac);font-weight:700}
+.deep-chip.all{border-color:var(--bl);color:var(--bl)}
+.deep-chip.all.active{background:var(--bl);color:var(--bg);border-color:var(--bl)}
+.ft{text-align:center;padding:32px 24px;font-size:11px;color:var(--mt);border-top:1px solid var(--bd);margin-top:32px;letter-spacing:.3px}
+.mc{color:var(--ac)}.mgood{color:var(--ac)}.mok{color:var(--am)}.mbad{color:var(--rd)}
+/* Salary input inline */
+.sal-input{background:var(--bg4);border:1px solid var(--bd);border-radius:4px;padding:5px 8px;font-size:13px;font-weight:600;color:var(--wh);width:100px;font-family:var(--sans);text-align:right}
+.sal-input:focus{border-color:var(--ac);outline:none}
+@media(max-width:768px){.hero{padding:32px 16px 24px}.hero h1{font-size:1.6rem}.sbs,.scn-grid{grid-template-columns:1fr;gap:10px}.sbsv,.scn-vs{padding:6px}.cg{grid-template-columns:1fr}.sg{grid-template-columns:repeat(2,1fr)}.res-grid{grid-template-columns:repeat(2,1fr)}.port-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="hero-tag">⚡ practice intelligence platform</div>
+<h1><span class="brand">Joseph Psychiatry</span> <em>Intelligence</em></h1>
+<p>Reimbursement analytics · Revenue modeling · Regulatory intelligence · Multi-state expansion planning</p>
+<div style="display:flex;gap:40px;justify-content:center;margin-top:18px">
+<div style="text-align:center"><div style="font-family:var(--disp);font-size:30px;font-weight:800;color:var(--wh)">17</div><div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--mt)">States Evaluated</div></div>
+<div style="text-align:center"><div style="font-family:var(--disp);font-size:30px;font-weight:800;color:var(--wh)">4</div><div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--mt)">Insurers Analyzed</div></div>
+</div>
+</div>
+<div class="nb"><div class="ni">
+<div class="nt a" data-s="overview">Overview</div>
+<div class="nt" data-s="heatmap">Heatmap</div>
+<div class="nt" data-s="rankings">Rankings</div>
+<div class="nt" data-s="compare">Compare</div>
+<div class="nt" data-s="states">States</div>
+<div class="nt" data-s="deep">Expansion Intel</div>
+<div class="nt" data-s="comp">ABV All-Star Model</div>
+<div class="nt" data-s="projector">Revenue Projector</div>
+<div class="nt" data-s="reverse">Reverse Calc</div>
+<div class="nt" data-s="portfolio">Portfolio</div>
+<div class="nt" data-s="ramp">Ramp-Up</div>
+<div class="nt" data-s="scenario">Scenarios</div>
+<div class="nt" data-s="growth">5-Year Growth</div>
+</div></div>
+<div class="con">
+<div class="sec a" id="sec-overview"><div class="tl">Dashboard</div><h2 class="tl2">At a Glance</h2><p class="ts">Key metrics across all states and insurers.</p><div class="sg" id="oSum"></div><div class="card"><div class="ct">How We Bill</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px"><div style="padding:14px;background:var(--bg4);border-radius:var(--Rs);border-left:2px solid var(--ac)"><div style="font-weight:700;color:var(--wh);margin-bottom:3px">Intake</div><div style="font-size:12px;color:var(--mt);margin-bottom:6px">CPT 90792</div><div style="font-family:var(--disp);font-size:22px;font-weight:700;color:var(--ac)" id="aI">—</div><div style="font-size:11px;color:var(--mt)">avg all markets</div></div><div style="padding:14px;background:var(--bg4);border-radius:var(--Rs);border-left:2px solid var(--bl)"><div style="font-weight:700;color:var(--wh);margin-bottom:3px">Follow-Up</div><div style="font-size:12px;color:var(--mt);margin-bottom:6px">CPT 99213 + 90833</div><div style="font-family:var(--disp);font-size:22px;font-weight:700;color:var(--bl)" id="aF">—</div><div style="font-size:11px;color:var(--mt)">avg all markets</div></div></div></div><div class="card"><div class="ct">Insurer Avg — Follow-Up</div><div id="oBars"></div></div><div class="card"><div class="ct">Top Combos — Follow-Up</div><div id="oT5"></div></div></div>
+<div class="sec" id="sec-heatmap"><div class="tl">Rate Analysis</div><h2 class="tl2">Rate Heatmap</h2><p class="ts">Color-coded. Green = highest, red = lowest. Click headers to sort.</p><div style="margin-bottom:16px"><div class="fl2">Visit Type</div><div class="fr" id="hmF"></div></div><div class="tw"><table><thead><tr id="hmH"></tr></thead><tbody id="hmB"></tbody></table></div></div>
+<div class="sec" id="sec-rankings"><div class="tl">Market Intel</div><h2 class="tl2">Best Markets</h2><p class="ts">Tied values share the same rank.</p><div style="margin-bottom:16px"><div class="fl2">Rank By</div><div class="fr" id="rkF"></div></div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:16px"><div><div class="ct">Best States</div><div id="rkS"></div></div><div><div class="ct">Best Insurers</div><div id="rkI"></div></div></div><div class="card" style="margin-top:16px"><div class="ct">All Combos</div><div style="max-height:400px;overflow-y:auto" id="rkA"></div></div></div>
+<div class="sec" id="sec-compare"><div class="tl">Comparison</div><h2 class="tl2">Side-by-Side</h2><p class="ts">Pick two states or insurers.</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;align-items:end"><div><div class="fl2">Mode</div><select class="sel" id="cM" onchange="pCD()"><option value="state">States</option><option value="insurer">Insurers</option></select></div><div><div class="fl2">Left</div><select class="sel" id="cL" onchange="rC()"></select></div><div><div class="fl2">Right</div><select class="sel" id="cR" onchange="rC()"></select></div></div><div id="cRes"></div></div>
+<div class="sec" id="sec-states"><div class="tl">State Intel</div><h2 class="tl2">State Profiles</h2><p class="ts">All insurer rates per state.</p><div class="fr" id="scF" style="margin-bottom:16px"></div><div class="cg" id="scC"></div></div>
+<!-- EXPANSION INTEL --><div class="sec" id="sec-deep"><div class="tl">Expansion Intelligence</div><h2 class="tl2">State Expansion Engine</h2><p class="ts">Loading regulatory intelligence...</p></div>
+<!-- PROJECTOR --><div class="sec" id="sec-projector"><div class="tl">Revenue Modeling</div><h2 class="tl2">Revenue Projector</h2><p class="ts">Real-time modeling. NPs/PAs at 85%. Set per-state salary below.</p><div style="display:grid;grid-template-columns:360px 1fr;gap:20px"><div><div class="card"><div class="ct">Configuration</div><div class="input-group"><label>State</label><select class="sel" id="pState" onchange="rP()" style="width:100%"></select></div><div class="fl2" style="margin-top:10px">Accepted Insurers</div><div class="chk-group" id="pIns"></div><div class="fl2">Payer Mix (weight)</div><div id="pMix"></div><div class="slider-group"><div class="slider-label"><span class="sn">Patients / Provider / Mo</span><span class="sv2" id="pPatsV">300</span></div><input type="range" id="pPats" min="100" max="450" value="300" step="10" oninput="rP()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Intake Mix</span><span class="sv2" id="pIntV">5%</span></div><input type="range" id="pInt" min="0" max="30" value="5" step="1" oninput="rP()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Providers</span><span class="sv2" id="pStaffV">1</span></div><input type="range" id="pStaff" min="1" max="50" value="1" step="1" oninput="rP()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Salary (this state)</span><span class="sv2" id="pSalV">$165,000</span></div><input type="range" id="pSal" min="120000" max="300000" value="165000" step="5000" oninput="rP()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Overhead / Provider / Mo</span><span class="sv2" id="pOhV">$600</span></div><input type="range" id="pOh" min="0" max="5000" value="600" step="50" oninput="rP()"><div style="font-size:10px;color:var(--mt);margin-top:4px;line-height:1.6;padding:6px 8px;background:var(--bg3);border-radius:6px;border:1px solid var(--bd)">EHR $74 · Malpractice $417 · AI Scribe $69 · eRx $49 · Microsoft $12.50 · Phone $10 = <b style="color:var(--wh)">$631.50/mo</b><br><span style="color:var(--pp)">One-time setup/provider: $5,700</span> (MacBook $1,400 · iPhone $1,300 · Office $3,000)</div></div><div class="slider-group"><div class="slider-label"><span class="sn">Billing Fee %</span><span class="sv2" id="pBillV">5%</span></div><input type="range" id="pBill" min="0" max="15" value="5" step="1" oninput="rP()"></div></div></div><div id="pResults"></div></div></div>
+<!-- REVERSE --><div class="sec" id="sec-reverse"><div class="tl">Reverse Engineering</div><h2 class="tl2">Reverse Calculator</h2><p class="ts">Work backwards from a revenue target.</p><div style="display:grid;grid-template-columns:360px 1fr;gap:20px"><div><div class="card"><div class="ct">Target Setup</div><div class="input-group"><label>Annual Revenue Target ($)</label><input type="number" class="num-input" id="rvTarget" value="5000000" oninput="rRv()"></div><div class="input-group"><label>State</label><select class="sel" id="rvState" onchange="rRv()" style="width:100%"></select></div><div class="fl2" style="margin-top:10px">Accepted Insurers</div><div class="chk-group" id="rvIns"></div><div class="slider-group"><div class="slider-label"><span class="sn">Patients / Provider / Mo</span><span class="sv2" id="rvPatsV">300</span></div><input type="range" id="rvPats" min="100" max="450" value="300" step="10" oninput="rRv()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Intake Mix</span><span class="sv2" id="rvIntV">5%</span></div><input type="range" id="rvInt" min="0" max="30" value="5" step="1" oninput="rRv()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Salary / Year</span><span class="sv2" id="rvSalV">$165,000</span></div><input type="range" id="rvSal" min="120000" max="300000" value="165000" step="5000" oninput="rRv()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Overhead / Provider / Mo</span><span class="sv2" id="rvOhV">$600</span></div><input type="range" id="rvOh" min="0" max="5000" value="600" step="50" oninput="rRv()"><div style="font-size:10px;color:var(--mt);margin-top:4px;line-height:1.6;padding:6px 8px;background:var(--bg3);border-radius:6px;border:1px solid var(--bd)">EHR $74 · Malpractice $417 · AI Scribe $69 · eRx $49 · Microsoft $12.50 · Phone $10 = <b style="color:var(--wh)">$631.50/mo</b></div></div><div class="slider-group"><div class="slider-label"><span class="sn">Billing Fee %</span><span class="sv2" id="rvBillV">5%</span></div><input type="range" id="rvBill" min="0" max="15" value="5" step="1" oninput="rRv()"></div></div></div><div id="rvResults"></div></div></div>
+<!-- PORTFOLIO --><div class="sec" id="sec-portfolio"><div class="tl">Multi-Market Strategy</div><h2 class="tl2">Portfolio Builder</h2><p class="ts">Allocate providers across states with per-state salaries.</p><div class="card"><div class="ct">Add Markets</div><div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:end"><div><div class="fl2">State</div><select class="sel" id="ptSt"></select></div><div><div class="fl2">NPs</div><input type="number" class="num-input" id="ptN" value="3" min="1" max="50" style="width:70px"></div><div><div class="fl2">Salary/yr</div><input type="number" class="sal-input" id="ptSalIn" value="165000" style="width:100px"></div><div style="padding-top:18px"><button class="fc a" onclick="addPort()" style="cursor:pointer">+ Add</button></div></div><div id="ptRows"></div></div><div class="card"><div class="ct">Shared Settings</div><div class="slider-group"><div class="slider-label"><span class="sn">Patients / Provider / Mo</span><span class="sv2" id="ptPatsV">300</span></div><input type="range" id="ptPats" min="100" max="450" value="300" step="10" oninput="rPt()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Intake Mix</span><span class="sv2" id="ptIntV">5%</span></div><input type="range" id="ptInt" min="0" max="30" value="5" step="1" oninput="rPt()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Overhead / Mo per Provider</span><span class="sv2" id="ptOhV">$600</span></div><input type="range" id="ptOh" min="0" max="5000" value="600" step="50" oninput="rPt()"><div style="font-size:10px;color:var(--mt);margin-top:4px;line-height:1.6;padding:6px 8px;background:var(--bg3);border-radius:6px;border:1px solid var(--bd)">EHR $74 · Malpractice $417 · AI Scribe $69 · eRx $49 · Microsoft $12.50 · Phone $10 = <b style="color:var(--wh)">$631.50/mo</b></div></div><div class="slider-group"><div class="slider-label"><span class="sn">Billing Fee %</span><span class="sv2" id="ptBillV">5%</span></div><input type="range" id="ptBill" min="0" max="15" value="5" step="1" oninput="rPt()"></div></div><div id="ptResults"></div></div>
+<!-- RAMP --><div class="sec" id="sec-ramp"><div class="tl">Onboarding Model</div><h2 class="tl2">Provider Ramp-Up</h2><p class="ts">Model the ramp from hire to full capacity.</p><div class="card"><div class="ct">Settings</div><div class="input-group"><label>State</label><select class="sel" id="rmSt" onchange="rRm()" style="width:100%"></select></div><div class="slider-group"><div class="slider-label"><span class="sn">Target Patients / Mo</span><span class="sv2" id="rmTargV">300</span></div><input type="range" id="rmTarg" min="100" max="450" value="300" step="10" oninput="rRm()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Ramp Months</span><span class="sv2" id="rmMonV">6</span></div><input type="range" id="rmMon" min="2" max="12" value="6" step="1" oninput="rRm()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Salary / Year</span><span class="sv2" id="rmSalV">$165,000</span></div><input type="range" id="rmSal" min="120000" max="300000" value="165000" step="5000" oninput="rRm()"></div></div><div id="rmResults"></div></div>
+<!-- SCENARIO --><div class="sec" id="sec-scenario"><div class="tl">Scenario Planning</div><h2 class="tl2">A vs B Comparison</h2><p class="ts">Compare two staffing scenarios side-by-side.</p><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px"><div class="card"><div class="ct" style="color:var(--ac)">Scenario A</div><div class="input-group"><label>State</label><select class="sel" id="scASt" onchange="rSc()" style="width:100%"></select></div><div class="slider-group"><div class="slider-label"><span class="sn">Providers</span><span class="sv2" id="scAStfV">5</span></div><input type="range" id="scAStf" min="1" max="50" value="5" step="1" oninput="rSc()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Patients / Mo</span><span class="sv2" id="scAPtsV">200</span></div><input type="range" id="scAPts" min="100" max="450" value="200" step="10" oninput="rSc()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Salary</span><span class="sv2" id="scASalV">$180,000</span></div><input type="range" id="scASal" min="120000" max="300000" value="180000" step="5000" oninput="rSc()"></div></div><div class="card"><div class="ct" style="color:var(--am)">Scenario B</div><div class="input-group"><label>State</label><select class="sel" id="scBSt" onchange="rSc()" style="width:100%"></select></div><div class="slider-group"><div class="slider-label"><span class="sn">Providers</span><span class="sv2" id="scBStfV">10</span></div><input type="range" id="scBStf" min="1" max="50" value="10" step="1" oninput="rSc()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Patients / Mo</span><span class="sv2" id="scBPtsV">350</span></div><input type="range" id="scBPts" min="100" max="450" value="350" step="10" oninput="rSc()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Salary</span><span class="sv2" id="scBSalV">$150,000</span></div><input type="range" id="scBSal" min="120000" max="300000" value="150000" step="5000" oninput="rSc()"></div></div></div><div id="scResults"></div></div>
+<!-- GROWTH --><div class="sec" id="sec-growth"><div class="tl">Long-Range Planning</div><h2 class="tl2">5-Year Growth</h2><p class="ts">Model hiring cadence, salary inflation, and revenue growth over 5 years.</p><div class="card"><div class="ct">Parameters</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px"><div class="input-group"><label>State</label><select class="sel" id="grSt" onchange="rGr()" style="width:100%"></select></div><div class="slider-group"><div class="slider-label"><span class="sn">Starting Providers (Y1)</span><span class="sv2" id="grStartV">3</span></div><input type="range" id="grStart" min="1" max="20" value="3" step="1" oninput="rGr()"></div><div class="slider-group"><div class="slider-label"><span class="sn">New Hires / Quarter</span><span class="sv2" id="grHireV">2</span></div><input type="range" id="grHire" min="0" max="10" value="2" step="1" oninput="rGr()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Patients / Provider / Mo</span><span class="sv2" id="grPatsV">300</span></div><input type="range" id="grPats" min="100" max="450" value="300" step="10" oninput="rGr()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Starting Salary</span><span class="sv2" id="grSalV">$165,000</span></div><input type="range" id="grSal" min="120000" max="300000" value="165000" step="5000" oninput="rGr()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Salary Inflation / Year</span><span class="sv2" id="grInflV">3%</span></div><input type="range" id="grInfl" min="0" max="10" value="3" step="0.5" oninput="rGr()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Overhead / Provider / Mo</span><span class="sv2" id="grOhV">$600</span></div><input type="range" id="grOh" min="0" max="5000" value="600" step="50" oninput="rGr()"><div style="font-size:10px;color:var(--mt);margin-top:4px;line-height:1.6;padding:6px 8px;background:var(--bg3);border-radius:6px;border:1px solid var(--bd)">EHR $74 · Malpractice $417 · AI Scribe $69 · eRx $49 · Microsoft $12.50 · Phone $10 = <b style="color:var(--wh)">$631.50/mo</b><br><span style="color:var(--pp)">One-time setup/provider: $5,700</span></div></div><div class="slider-group"><div class="slider-label"><span class="sn">Billing Fee %</span><span class="sv2" id="grBillV">5%</span></div><input type="range" id="grBill" min="0" max="15" value="5" step="1" oninput="rGr()"></div></div></div><div id="grResults"></div></div>
+<!-- COMP MODEL --><div class="sec" id="sec-comp"><div class="tl">Provider Compensation</div><h2 class="tl2">Abe's All-Star NP Compensation Model</h2><p class="ts">ABV Comp Model V1 · February 2026. Tiered per-visit compensation with productivity bonuses.</p><div style="display:grid;grid-template-columns:360px 1fr;gap:20px"><div><div class="card"><div class="ct">Configuration</div><div class="input-group"><label>State</label><select class="sel" id="cpSt" onchange="rCp()" style="width:100%"></select></div><div class="slider-group"><div class="slider-label"><span class="sn">Providers</span><span class="sv2" id="cpStaffV">2</span></div><input type="range" id="cpStaff" min="1" max="50" value="2" step="1" oninput="rCp()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Visit Equivalents / Mo</span><span class="sv2" id="cpVisV">300</span></div><input type="range" id="cpVis" min="150" max="500" value="300" step="10" oninput="rCp()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Intake Mix</span><span class="sv2" id="cpIntV">5%</span></div><input type="range" id="cpInt" min="0" max="30" value="5" step="1" oninput="rCp()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Overhead / Provider / Mo</span><span class="sv2" id="cpOhV">$600</span></div><input type="range" id="cpOh" min="0" max="5000" value="600" step="50" oninput="rCp()"></div><div class="slider-group"><div class="slider-label"><span class="sn">Billing Fee %</span><span class="sv2" id="cpBillV">5%</span></div><input type="range" id="cpBill" min="0" max="15" value="5" step="1" oninput="rCp()"></div></div></div><div id="cpResults"></div></div></div>
+
+</div>
+
+<script>
+const D=[{s:'NY',i:'Aetna',r:{a:178.63,b:105.60,c:95.69,d:138.71}},{s:'NY',i:'BCBS',r:{a:179,b:76,c:102,d:143}},{s:'NY',i:'Cigna',r:{a:200.64,b:73,c:67.50,d:115}},{s:'NY',i:'Optum',r:{a:192.92,b:73.49,c:85.86,d:120.91}},{s:'NJ',i:'Aetna',r:{a:184.34,b:105.60,c:95.69,d:null}},{s:'NJ',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'NJ',i:'Cigna',r:{a:150,b:59,c:68,d:null}},{s:'NJ',i:'Optum',r:{a:177.56,b:77.57,c:85.89,d:null}},{s:'PA',i:'Aetna',r:{a:130,b:77,c:80,d:null}},{s:'PA',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'PA',i:'Cigna',r:{a:151,b:59,c:68,d:null}},{s:'PA',i:'Optum',r:{a:184.32,b:64.66,c:83.96,d:null}},{s:'CT',i:'Aetna',r:{a:143,b:84,c:88,d:null}},{s:'CT',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'CT',i:'Cigna',r:{a:142,b:56,c:64,d:null}},{s:'CT',i:'Optum',r:{a:193,b:68.52,c:88.78,d:null}},{s:'TX',i:'Aetna',r:{a:178.63,b:105.60,c:95.69,d:null}},{s:'TX',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'TX',i:'Cigna',r:{a:150,b:59,c:68,d:null}},{s:'TX',i:'Optum',r:{a:175,b:73.49,c:80,d:null}},{s:'FL',i:'Aetna',r:{a:178.63,b:105.60,c:95.69,d:null}},{s:'FL',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'FL',i:'Cigna',r:{a:150,b:59,c:68,d:null}},{s:'FL',i:'Optum',r:{a:168.88,b:77.20,c:74.79,d:null}},{s:'CA',i:'Aetna',r:{a:178,b:89,c:93,d:null}},{s:'CA',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'CA',i:'Cigna',r:{a:150,b:59,c:68,d:null}},{s:'CA',i:'Optum',r:{a:177.56,b:76.65,c:82.99,d:null}},{s:'MA',i:'Aetna',r:{a:178.63,b:105.60,c:95.69,d:null}},{s:'MA',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'MD',i:'Aetna',r:{a:178.63,b:105.60,c:95.69,d:null}},{s:'MD',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'VA',i:'Aetna',r:{a:178.63,b:105.60,c:95.69,d:null}},{s:'VA',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'IL',i:'Aetna',r:{a:178.63,b:105.60,c:95.69,d:null}},{s:'IL',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'CO',i:'Aetna',r:{a:178.63,b:105.60,c:95.69,d:null}},{s:'CO',i:'BCBS',r:{a:232,b:83,c:105,d:null}},{s:'WA',i:'Aetna',r:{a:178.63,b:105.60,c:95.69,d:null}},{s:'WA',i:'BCBS',r:{a:232,b:83,c:105,d:null}}];
+const SN={NY:'New York',NJ:'New Jersey',PA:'Pennsylvania',CT:'Connecticut',TX:'Texas',FL:'Florida',CA:'California',MA:'Massachusetts',MD:'Maryland',VA:'Virginia',IL:'Illinois',CO:'Colorado',WA:'Washington'};
+const INS=['Aetna','BCBS','Cigna','Optum'];
+const IC={Aetna:{d:'d2',b:'#b388ff'},BCBS:{d:'d1',b:'#4fc3f7'},Cigna:{d:'d3',b:'#ffb74d'},Optum:{d:'d4',b:'#00ff88'}};
+const VT={intake:{l:'Intake (90792)',f:r=>r.a},followup:{l:'Follow-Up (99213+90833)',f:r=>(r.c!=null&&r.b!=null)?r.c+r.b:null},extended:{l:'Extended (99214+90833)',f:r=>(r.d!=null&&r.b!=null)?r.d+r.b:null}};
+const ST=[...new Set(D.map(x=>x.s))];
+// Per-state default salaries
+const DEF_SAL={NY:165000,NJ:155000,PA:150000,CT:155000,TX:145000,FL:145000,CA:170000,MA:160000,MD:155000,VA:150000,IL:150000,CO:150000,WA:160000};
+const $=v=>v==null?'':'$'+v.toFixed(2);
+const $k=v=>{if(Math.abs(v)>=1e6)return(v<0?'-':'')+'$'+(Math.abs(v)/1e6).toFixed(2)+'M';if(Math.abs(v)>=1e3)return(v<0?'-':'')+'$'+(Math.abs(v)/1e3).toFixed(0)+'K';return'$'+v.toFixed(0)};
+const $f=v=>'$'+Math.round(v).toLocaleString('en-US');
+const mc=m=>m>=40?'mgood':m>=20?'mok':'mbad';
+function gv(row,vk){return VT[vk].f(row.r)}
+function insFor(s){return[...new Set(D.filter(x=>x.s===s).map(x=>x.i))];}
+function ac2(vk){return D.map(x=>({s:x.s,i:x.i,v:gv(x,vk)})).filter(x=>x.v!=null)}
+function abS(vk){const m={};ST.forEach(s=>{const vs=D.filter(x=>x.s===s).map(x=>gv(x,vk)).filter(v=>v!=null);m[s]=vs.length?vs.reduce((a,b)=>a+b,0)/vs.length:null});return m}
+function abI(vk){const m={};INS.forEach(i=>{const vs=D.filter(x=>x.i===i).map(x=>gv(x,vk)).filter(v=>v!=null);m[i]=vs.length?vs.reduce((a,b)=>a+b,0)/vs.length:null});return m}
+function oa(vk){const v=D.map(x=>gv(x,vk)).filter(v=>v!=null);return v.length?v.reduce((a,b)=>a+b,0)/v.length:null}
+function denseRank(a){let r=1,res=[];for(let i=0;i<a.length;i++){if(i>0&&Math.abs(a[i].val-a[i-1].val)>.005)r++;res.push({...a[i],rank:r})}return res}
+function groupByRank(r){const g=[];r.forEach(x=>{let f=g.find(z=>z.rank===x.rank);if(!f){f={rank:x.rank,val:x.val,items:[]};g.push(f)}f.items.push(x)});return g}
+function blendedW(state,insurerWeights,intakePct){const tw=Object.values(insurerWeights).reduce((a,b)=>a+b,0);if(tw===0)return 0;let wI=0,wF=0;Object.entries(insurerWeights).forEach(([ins,w])=>{const row=D.find(x=>x.s===state&&x.i===ins);if(!row||w===0)return;const ir=gv(row,'intake'),fr=gv(row,'followup'),nw=w/tw;if(ir!=null)wI+=ir*nw;if(fr!=null)wF+=fr*nw});return(wI*(intakePct/100)+wF*(1-intakePct/100))*0.85}
+function blended(state,insurers,intakePct){const w={};insurers.forEach(i=>w[i]=1);return blendedW(state,w,intakePct)}
+document.querySelectorAll('.nt').forEach(t=>{t.addEventListener('click',()=>{document.querySelectorAll('.nt').forEach(x=>x.classList.remove('a'));document.querySelectorAll('.sec').forEach(x=>x.classList.remove('a'));t.classList.add('a');document.getElementById('sec-'+t.dataset.s).classList.add('a')})});
+function getChecked(id){return[...document.querySelectorAll('#'+id+' .chk.on')].map(c=>c.dataset.i)}
+function stOpts(id,def){document.getElementById(id).innerHTML=ST.map(s=>`<option value="${s}" ${s===(def||ST[0])?'selected':''}>${SN[s]} (${s})</option>`).join('')}
+function insChks(id,defaults){const df=defaults||['Aetna','BCBS'];document.getElementById(id).innerHTML=INS.map(i=>`<label class="chk ${df.includes(i)?'on':''}" data-i="${i}"><input type="checkbox" ${df.includes(i)?'checked':''}><span class="dot ${IC[i].d}"></span>${i}</label>`).join('');document.querySelectorAll('#'+id+' .chk').forEach(c=>{c.addEventListener('click',e=>{e.preventDefault();c.classList.toggle('on');c.querySelector('input').checked=c.classList.contains('on')})})}
+// OVERVIEW
+function rO(){const ia=oa('intake'),fa=oa('followup');document.getElementById('aI').textContent=$(ia);document.getElementById('aF').textContent=$(fa);const co=ac2('followup').sort((a,b)=>b.v-a.v);const best=co[0],worst=co[co.length-1],iB=ac2('intake').sort((a,b)=>b.v-a.v)[0];document.getElementById('oSum').innerHTML=`<div class="sb"><div class="sl">Highest Follow-Up</div><div class="sv" style="color:var(--ac)">${$(best.v)}</div><div class="su">${best.s} · ${best.i}</div></div><div class="sb"><div class="sl">Lowest Follow-Up</div><div class="sv" style="color:var(--rd)">${$(worst.v)}</div><div class="su">${worst.s} · ${worst.i}</div></div><div class="sb"><div class="sl">Highest Intake</div><div class="sv" style="color:var(--bl)">${$(iB.v)}</div><div class="su">${iB.s} · ${iB.i}</div></div><div class="sb"><div class="sl">Avg Follow-Up</div><div class="sv" style="color:var(--wh)">${$(fa)}</div><div class="su">all markets</div></div>`;const iA=abI('followup'),mx=Math.max(...Object.values(iA).filter(v=>v!=null));document.getElementById('oBars').innerHTML=Object.entries(iA).filter(([,v])=>v!=null).sort((a,b)=>b[1]-a[1]).map(([ins,v])=>`<div class="bar"><div class="lb"><span class="dot ${IC[ins].d}"></span>${ins}</div><div class="tk"><div class="fl" style="width:${(v/mx*100).toFixed(0)}%;background:${IC[ins].b}">${$(v)}</div></div></div>`).join('');const ranked=denseRank(co.map(x=>({key:x.s+'·'+x.i,s:x.s,i:x.i,val:x.v})));const groups=groupByRank(ranked);const cl=['var(--ac)','var(--bl)','var(--am)','var(--pp)','var(--tx)'];document.getElementById('oT5').innerHTML=groups.filter(g=>g.rank<=5).map(g=>{const c=cl[g.rank-1]||'var(--tx)';return`<div class="rg"><div class="rg-head"><div class="rg-rank" style="color:${c}">#${g.rank}</div><div class="rg-val" style="color:${c}">${$(g.val)}<span style="font-size:11px;color:var(--mt);margin-left:6px">/visit</span></div></div><div class="rg-items">${g.items.map(x=>`<span class="rg-tag"><span class="dot ${IC[x.i].d}"></span>${x.s}·${x.i}</span>`).join('')}</div></div>`}).join('')}
+// HEATMAP
+let hV='followup',hS={c:null,d:'desc'};function bHF(){const e=document.getElementById('hmF');e.innerHTML=Object.entries(VT).map(([k,v])=>`<div class="fc ${k===hV?'a':''}" data-v="${k}">${v.l}</div>`).join('');e.querySelectorAll('.fc').forEach(c=>c.addEventListener('click',()=>{hV=c.dataset.v;e.querySelectorAll('.fc').forEach(x=>x.classList.remove('a'));c.classList.add('a');hS={c:null,d:'desc'};rH()}))}function rH(){let h='<th>State</th>';INS.forEach((ins,idx)=>{const cl=hS.c===idx?(hS.d==='asc'?'sa':'sd'):'';h+=`<th class="${cl}" data-c="${idx}"><span class="dot ${IC[ins].d}"></span>${ins}</th>`});const ai=INS.length,acl=hS.c===ai?(hS.d==='asc'?'sa':'sd'):'';h+=`<th class="${acl}" data-c="${ai}">Avg</th>`;document.getElementById('hmH').innerHTML=h;let rows=ST.map(s=>{const vs=INS.map(i=>{const row=D.find(x=>x.s===s&&x.i===i);return row?gv(row,hV):null});const vv=vs.filter(v=>v!=null);return{s,vs,avg:vv.length?vv.reduce((a,b)=>a+b,0)/vv.length:null}});if(hS.c!=null)rows.sort((a,b)=>{const av=hS.c===ai?a.avg:a.vs[hS.c],bv=hS.c===ai?b.avg:b.vs[hS.c];if(av==null)return 1;if(bv==null)return-1;return hS.d==='asc'?av-bv:bv-av});const allV=rows.flatMap(r=>r.vs.filter(v=>v!=null)),mn=allV.length?Math.min(...allV):0,mmx=allV.length?Math.max(...allV):1;function hc(v){if(v==null)return'';const p=(v-mn)/(mmx-mn||1);return p>=.8?'h5':p>=.6?'h4':p>=.4?'h3':p>=.2?'h2':'h1c'}document.getElementById('hmB').innerHTML=rows.map(r=>{let s=`<tr><td style="font-weight:700;color:var(--wh)">${r.s}</td>`;r.vs.forEach(v=>{s+=`<td class="${v!=null?hc(v):''}" style="font-weight:${v!=null?'600':'400'};${v==null?'color:var(--mt)':''}">${$(v)}</td>`});return s+`<td style="font-weight:700;color:var(--wh)">${r.avg!=null?$(r.avg):''}</td></tr>`}).join('');document.querySelectorAll('#hmH th[data-c]').forEach(th=>{th.addEventListener('click',()=>{const c=parseInt(th.dataset.c);hS=hS.c===c?{c,d:hS.d==='desc'?'asc':'desc'}:{c,d:'desc'};rH()})})}
+// RANKINGS
+let rV='followup';function bRF(){const e=document.getElementById('rkF');e.innerHTML=Object.entries(VT).map(([k,v])=>`<div class="fc ${k===rV?'a':''}" data-v="${k}">${v.l}</div>`).join('');e.querySelectorAll('.fc').forEach(c=>c.addEventListener('click',()=>{rV=c.dataset.v;e.querySelectorAll('.fc').forEach(x=>x.classList.remove('a'));c.classList.add('a');rRk()}))}function rRk(){const sa=abS(rV),ia=abI(rV),cl=['var(--ac)','var(--bl)','var(--am)','var(--pp)','var(--tx)'];const stG=groupByRank(denseRank(Object.entries(sa).filter(([,v])=>v!=null).sort((a,b)=>b[1]-a[1]).map(([s,v])=>({key:s,val:v}))));document.getElementById('rkS').innerHTML=stG.map(g=>{const c=cl[g.rank-1]||'var(--tx)';return`<div class="rg"><div class="rg-head"><div class="rg-rank" style="color:${c}">#${g.rank}</div><div class="rg-val" style="color:${c}">${$(g.val)}<span style="font-size:11px;color:var(--mt);margin-left:4px">avg</span></div></div><div class="rg-items">${g.items.map(x=>`<span class="rg-tag">${SN[x.key]} (${x.key})</span>`).join('')}</div></div>`}).join('');const inG=groupByRank(denseRank(Object.entries(ia).filter(([,v])=>v!=null).sort((a,b)=>b[1]-a[1]).map(([i,v])=>({key:i,val:v}))));document.getElementById('rkI').innerHTML=inG.map(g=>{const c=cl[g.rank-1]||'var(--tx)';return`<div class="rg"><div class="rg-head"><div class="rg-rank" style="color:${c}">#${g.rank}</div><div class="rg-val" style="color:${c}">${$(g.val)}<span style="font-size:11px;color:var(--mt);margin-left:4px">avg</span></div></div><div class="rg-items">${g.items.map(x=>`<span class="rg-tag"><span class="dot ${IC[x.key].d}"></span>${x.key}</span>`).join('')}</div></div>`}).join('');const co=ac2(rV).sort((a,b)=>b.v-a.v),mxR=co[0]?.v||1;document.getElementById('rkA').innerHTML=co.map(x=>`<div class="bar"><div class="lb">${x.s}·${x.i}</div><div class="tk"><div class="fl" style="width:${(x.v/mxR*100).toFixed(0)}%;background:${IC[x.i].b}">${$(x.v)}</div></div></div>`).join('')}
+// COMPARE
+function pCD(){const m=document.getElementById('cM').value,l=document.getElementById('cL'),r=document.getElementById('cR');const it=m==='state'?ST.map(s=>({v:s,l:SN[s]+' ('+s+')'})):INS.map(i=>({v:i,l:i}));l.innerHTML=it.map((x,i)=>`<option value="${x.v}" ${i===0?'selected':''}>${x.l}</option>`).join('');r.innerHTML=it.map((x,i)=>`<option value="${x.v}" ${i===1?'selected':''}>${x.l}</option>`).join('');rC()}function rC(){const m=document.getElementById('cM').value,lv=document.getElementById('cL').value,rv=document.getElementById('cR').value,el=document.getElementById('cRes');let h='';if(m==='state'){const lI=insFor(lv),rI=insFor(rv),allI=[...new Set([...lI,...rI])];Object.entries(VT).forEach(([vk,vt])=>{const lR=allI.map(i=>{const row=D.find(x=>x.s===lv&&x.i===i);return{i,v:row?gv(row,vk):null}}).sort((a,b)=>(b.v||0)-(a.v||0));const rR=allI.map(i=>{const row=D.find(x=>x.s===rv&&x.i===i);return{i,v:row?gv(row,vk):null}}).sort((a,b)=>(b.v||0)-(a.v||0));const lM={},rM={};lR.forEach(x=>lM[x.i]=x.v);rR.forEach(x=>rM[x.i]=x.v);h+=`<div class="card"><div class="ct">${vt.l}</div><div class="sbs"><div class="sbsc"><div class="sbst">${SN[lv]}</div>`;lR.forEach(x=>{const ic=IC[x.i]||{d:'d1'};const o=rM[x.i],w=x.v!=null&&o!=null&&x.v>o,lo=x.v!=null&&o!=null&&x.v<o;h+=`<div class="sbsr"><span style="color:var(--mt)"><span class="dot ${ic.d}"></span>${x.i}</span><span style="font-weight:600;${w?'color:var(--ac)':lo?'color:var(--mt)':'color:var(--wh)'}">${$(x.v)}</span></div>`});h+=`</div><div class="sbsv">vs</div><div class="sbsc"><div class="sbst">${SN[rv]}</div>`;rR.forEach(x=>{const ic=IC[x.i]||{d:'d1'};const o=lM[x.i],w=x.v!=null&&o!=null&&x.v>o,lo=x.v!=null&&o!=null&&x.v<o;h+=`<div class="sbsr"><span style="color:var(--mt)"><span class="dot ${ic.d}"></span>${x.i}</span><span style="font-weight:600;${w?'color:var(--ac)':lo?'color:var(--mt)':'color:var(--wh)'}">${$(x.v)}</span></div>`});h+=`</div></div></div>`})}else{Object.entries(VT).forEach(([vk,vt])=>{const lR=ST.map(s=>{const row=D.find(x=>x.s===s&&x.i===lv);return{s,v:row?gv(row,vk):null}}).filter(x=>x.v!=null).sort((a,b)=>b.v-a.v);const rR=ST.map(s=>{const row=D.find(x=>x.s===s&&x.i===rv);return{s,v:row?gv(row,vk):null}}).filter(x=>x.v!=null).sort((a,b)=>b.v-a.v);const lM={},rM={};lR.forEach(x=>lM[x.s]=x.v);rR.forEach(x=>rM[x.s]=x.v);h+=`<div class="card"><div class="ct">${vt.l}</div><div class="sbs"><div class="sbsc"><div class="sbst"><span class="dot ${(IC[lv]||{d:'d1'}).d}"></span>${lv}</div>`;lR.forEach(x=>{const o=rM[x.s],w=x.v!=null&&o!=null&&x.v>o,lo=x.v!=null&&o!=null&&x.v<o;h+=`<div class="sbsr"><span style="color:var(--mt)">${x.s}</span><span style="font-weight:600;${w?'color:var(--ac)':lo?'color:var(--mt)':'color:var(--wh)'}">${$(x.v)}</span></div>`});h+=`</div><div class="sbsv">vs</div><div class="sbsc"><div class="sbst"><span class="dot ${(IC[rv]||{d:'d1'}).d}"></span>${rv}</div>`;rR.forEach(x=>{const o=lM[x.s],w=x.v!=null&&o!=null&&x.v>o,lo=x.v!=null&&o!=null&&x.v<o;h+=`<div class="sbsr"><span style="color:var(--mt)">${x.s}</span><span style="font-weight:600;${w?'color:var(--ac)':lo?'color:var(--mt)':'color:var(--wh)'}">${$(x.v)}</span></div>`});h+=`</div></div></div>`})}el.innerHTML=h}
+// STATES
+let sF='ALL';function bSF(){const e=document.getElementById('scF');e.innerHTML=`<div class="fc a" data-st="ALL">All</div>`+ST.map(s=>`<div class="fc" data-st="${s}">${s}</div>`).join('');e.querySelectorAll('.fc').forEach(c=>c.addEventListener('click',()=>{sF=c.dataset.st;e.querySelectorAll('.fc').forEach(x=>x.classList.remove('a'));c.classList.add('a');rSC()}))}function rSC(){const states=sF==='ALL'?ST:[sF];const allA=abS('followup');const sorted=Object.entries(allA).filter(([,v])=>v!=null).sort((a,b)=>b[1]-a[1]);const stRanked=denseRank(sorted.map(([s,v])=>({key:s,val:v})));const rankMap={};stRanked.forEach(x=>rankMap[x.key]=x.rank);document.getElementById('scC').innerHTML=states.map(s=>{const sR=D.filter(x=>x.s===s);const fuR=sR.map(x=>({i:x.i,v:gv(x,'followup')})).sort((a,b)=>(b.v||0)-(a.v||0));const intR=sR.map(x=>({i:x.i,v:gv(x,'intake')})).sort((a,b)=>(b.v||0)-(a.v||0));const best=fuR.find(x=>x.v!=null);const rank=rankMap[s]||'-';const rc={1:'background:var(--acd);color:var(--ac);border:1px solid var(--ac20)',2:'background:var(--bld);color:var(--bl);border:1px solid rgba(79,195,247,.2)',3:'background:var(--amd);color:var(--am);border:1px solid rgba(255,183,77,.2)'};return`<div class="cc"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px"><div><div style="font-family:var(--disp);font-size:20px;font-weight:700;color:var(--wh)">${SN[s]}</div><div style="font-size:11px;color:var(--mt);margin-top:2px">${s} · Default salary: ${$f(DEF_SAL[s])}</div></div><div style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;${rc[rank]||'background:var(--bg4);color:var(--mt);border:1px solid var(--bd)'}">#${rank}</div></div><div style="font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mt);margin-bottom:6px">Intake</div>${intR.map(x=>{const ic=IC[x.i]||{d:'d1'};return`<div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--bd);font-size:13px"><span style="color:var(--mt)"><span class="dot ${ic.d}"></span>${x.i}</span><span style="font-weight:600;color:var(--wh)">${$(x.v)}</span></div>`}).join('')}<div style="font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mt);margin:10px 0 6px">Follow-Up</div>${fuR.map(x=>{const ic=IC[x.i]||{d:'d1'};return`<div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--bd);font-size:13px"><span style="color:var(--mt)"><span class="dot ${ic.d}"></span>${x.i}</span><span style="font-weight:600;color:var(--wh)">${$(x.v)}</span></div>`}).join('')}${best?`<div style="margin-top:10px;padding:8px 10px;background:var(--bg4);border-radius:var(--Rs);font-size:12px;border:1px solid var(--bd)"><span style="color:var(--ac);font-weight:700">Best:</span> <span style="color:var(--wh)">${best.i} @ ${$(best.v)}</span></div>`:''}</div>`}).join('')}
+// PROJECTOR — salary auto-sets per state
+const SETUP_COST=5700;
+function initP(){stOpts('pState','NY');insChks('pIns',['Aetna','BCBS']);document.querySelectorAll('#pIns .chk').forEach(c=>c.addEventListener('click',()=>setTimeout(()=>{buildMix();rP()},10)));
+  document.getElementById('pState').addEventListener('change',()=>{const s=document.getElementById('pState').value;const sal=DEF_SAL[s]||165000;document.getElementById('pSal').value=sal;rP()});
+  buildMix();rP()}
+function buildMix(){const ins=getChecked('pIns');document.getElementById('pMix').innerHTML=ins.length?ins.map(i=>`<div class="slider-group" style="margin-bottom:10px"><div class="slider-label"><span class="sn"><span class="dot ${IC[i].d}"></span>${i}</span><span class="sv2" id="pm_${i}_v" style="font-size:14px">${Math.round(100/ins.length)}%</span></div><input type="range" class="pmix" data-i="${i}" min="0" max="100" value="${Math.round(100/ins.length)}" step="5" oninput="updMix(this);rP()"></div>`).join(''):'<div style="font-size:12px;color:var(--mt)">Select insurers above</div>'}
+function updMix(el){document.getElementById('pm_'+el.dataset.i+'_v').textContent=el.value+'%'}
+function getMixWeights(){const w={};document.querySelectorAll('.pmix').forEach(el=>{w[el.dataset.i]=+el.value});return w}
+function rP(){const st=document.getElementById('pState').value,ins=getChecked('pIns'),pats=+document.getElementById('pPats').value,intPct=+document.getElementById('pInt').value,staff=+document.getElementById('pStaff').value,sal=+document.getElementById('pSal').value,oh=+document.getElementById('pOh').value,billPct=+document.getElementById('pBill').value;
+  document.getElementById('pPatsV').textContent=pats;document.getElementById('pIntV').textContent=intPct+'%';document.getElementById('pStaffV').textContent=staff;document.getElementById('pSalV').textContent=$f(sal);document.getElementById('pOhV').textContent=$f(oh);document.getElementById('pBillV').textContent=billPct+'%';
+  const weights=getMixWeights(),rpp=Object.keys(weights).length?blendedW(st,weights,intPct):blended(st,ins,intPct);
+  const mRev=rpp*pats,aRev=mRev*12,tRev=aRev*staff;
+  const billFee=tRev*(billPct/100);
+  const tSal=sal*staff,tOh=oh*12*staff,tSetup=SETUP_COST*staff,tCost=tSal+tOh+billFee,tCostY1=tCost+tSetup,net=tRev-tCost,netY1=tRev-tCostY1,margin=tRev>0?(net/tRev*100):0,marginY1=tRev>0?(netY1/tRev*100):0;
+  const billPerProv=aRev*(billPct/100);
+  const profPerNP=aRev-sal-oh*12-billPerProv,profPerNPY1=profPerNP-SETUP_COST;
+  const pc=net>=0?'profit':'loss',cpct=tRev>0?Math.min(tCost/tRev*100,100):100,ppct=Math.max(100-cpct,0);
+  const iRows=ins.map(i=>{const row=D.find(x=>x.s===st&&x.i===i);const fu=row?gv(row,'followup'):null;const ir=row?gv(row,'intake'):null;return{i,fu,ir,fuNP:fu!=null?fu*.85:null,irNP:ir!=null?ir*.85:null}});
+  document.getElementById('pResults').innerHTML=`<div class="card" style="border-color:var(--ac20)"><div class="ct">Projection — ${SN[st]}</div><div class="res-grid"><div class="res-card revenue"><div class="rc-label">Annual Revenue</div><div class="rc-val">${$k(tRev)}</div><div class="rc-sub">${$f(Math.round(tRev/12))}/mo</div></div><div class="res-card cost"><div class="rc-label">Total Costs</div><div class="rc-val">${$k(tCost)}</div><div class="rc-sub">Y1 w/ setup: ${$k(tCostY1)}</div></div><div class="res-card ${pc}"><div class="rc-label">Net Profit</div><div class="rc-val">${$k(net)}</div><div class="rc-sub"><span class="${mc(margin)}">${margin.toFixed(1)}% margin</span></div></div><div class="res-card neutral"><div class="rc-label">Rev / Patient</div><div class="rc-val">${$(rpp)}</div><div class="rc-sub">85% NP/PA</div></div></div><div class="fl2">Revenue vs Cost</div><div class="profit-bar"><div class="pb-rev" style="width:${ppct}%;background:var(--ac);color:var(--bg)">${ppct>8?'Profit '+ppct.toFixed(0)+'%':''}</div><div class="pb-cost" style="width:${cpct}%;background:var(--am);color:var(--bg)">${cpct>8?'Cost '+cpct.toFixed(0)+'%':''}</div></div></div>
+  ${iRows.length?`<div class="card"><div class="ct">Per-Insurer Rates (at 85%)</div><div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>Insurer</th><th>Intake (Full)</th><th>Intake (85%)</th><th>Follow-Up (Full)</th><th>Follow-Up (85%)</th></tr></thead><tbody>${iRows.map(r=>`<tr><td style="color:var(--wh);font-weight:600"><span class="dot ${IC[r.i].d}"></span>${r.i}</td><td style="color:var(--mt)">${$(r.ir)}</td><td style="color:var(--bl);font-weight:600">${$(r.irNP)}</td><td style="color:var(--mt)">${$(r.fu)}</td><td style="color:var(--bl);font-weight:600">${$(r.fuNP)}</td></tr>`).join('')}</tbody></table></div></div>`:''}
+  <div class="card"><div class="ct">Per-Provider Breakdown</div><div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>Metric</th><th>Monthly</th><th>Annual</th></tr></thead><tbody><tr><td style="color:var(--wh)">Revenue</td><td style="color:var(--bl);font-weight:600">${$f(Math.round(mRev))}</td><td style="color:var(--bl);font-weight:600">${$f(Math.round(aRev))}</td></tr><tr><td style="color:var(--wh)">Salary</td><td style="color:var(--am)">${$f(Math.round(sal/12))}</td><td style="color:var(--am)">${$f(sal)}</td></tr><tr><td style="color:var(--wh)">Overhead</td><td style="color:var(--am)">${$f(oh)}</td><td style="color:var(--am)">${$f(oh*12)}</td></tr><tr><td style="color:var(--wh)">Billing Fee (${billPct}%)</td><td style="color:var(--am)">${$f(Math.round(billPerProv/12))}</td><td style="color:var(--am)">${$f(Math.round(billPerProv))}</td></tr><tr style="border-top:2px solid var(--ac)"><td style="color:var(--ac);font-weight:700">Net Profit / Provider</td><td style="color:var(--ac);font-weight:700">${$f(Math.round(profPerNP/12))}</td><td style="color:var(--ac);font-weight:700">${$f(Math.round(profPerNP))}</td></tr><tr><td style="color:var(--pp);font-size:11px">Y1 (incl. $${SETUP_COST.toLocaleString()} setup)</td><td style="color:var(--pp)">${$f(Math.round(profPerNPY1/12))}</td><td style="color:var(--pp)">${$f(Math.round(profPerNPY1))}</td></tr></tbody></table></div></div>
+  ${staff>1?`<div class="card"><div class="ct">${staff}-Provider Total</div><div class="res-grid" style="margin-bottom:0"><div class="res-card revenue"><div class="rc-label">Total Revenue</div><div class="rc-val">${$k(tRev)}</div></div><div class="res-card cost"><div class="rc-label">Total Costs</div><div class="rc-val">${$k(tCost)}</div><div class="rc-sub">Billing: ${$k(billFee)}</div></div><div class="res-card ${pc}"><div class="rc-label">Net Profit</div><div class="rc-val">${$k(net)}</div></div><div class="res-card neutral"><div class="rc-label">Profit / NP</div><div class="rc-val">${$k(profPerNP)}</div></div></div></div>`:''}`}
+// REVERSE
+function initRv(){stOpts('rvState','NY');insChks('rvIns',['Aetna','BCBS']);document.querySelectorAll('#rvIns .chk').forEach(c=>c.addEventListener('click',()=>setTimeout(rRv,10)));document.getElementById('rvState').addEventListener('change',()=>{const s=document.getElementById('rvState').value;document.getElementById('rvSal').value=DEF_SAL[s]||165000;rRv()});rRv()}
+function rRv(){const target=+document.getElementById('rvTarget').value||0,st=document.getElementById('rvState').value,ins=getChecked('rvIns'),pats=+document.getElementById('rvPats').value,intPct=+document.getElementById('rvInt').value,sal=+document.getElementById('rvSal').value,oh=+document.getElementById('rvOh').value,billPct=+document.getElementById('rvBill').value;document.getElementById('rvPatsV').textContent=pats;document.getElementById('rvIntV').textContent=intPct+'%';document.getElementById('rvSalV').textContent=$f(sal);document.getElementById('rvOhV').textContent=$f(oh);document.getElementById('rvBillV').textContent=billPct+'%';
+  const rpp=blended(st,ins,intPct),aRev=rpp*pats*12,np=aRev>0?Math.ceil(target/aRev):0,actR=aRev*np;
+  const billFee=actR*(billPct/100);
+  const tSal=sal*np,tOh=oh*12*np,tC=tSal+tOh+billFee,net=actR-tC,m=actR>0?(net/actR*100):0;
+  document.getElementById('rvResults').innerHTML=`<div class="card" style="border-color:rgba(255,183,77,.3)"><div class="ct">Result — ${SN[st]}</div><div class="res-grid"><div class="res-card staff"><div class="rc-label">Providers Needed</div><div class="rc-val">${np}</div><div class="rc-sub">@ ${pats} pts/mo</div></div><div class="res-card revenue"><div class="rc-label">Actual Revenue</div><div class="rc-val">${$k(actR)}</div></div><div class="res-card cost"><div class="rc-label">Total Costs</div><div class="rc-val">${$k(tC)}</div><div class="rc-sub">Billing: ${$k(billFee)}</div></div><div class="res-card ${net>=0?'profit':'loss'}"><div class="rc-label">Net Profit</div><div class="rc-val">${$k(net)}</div><div class="rc-sub"><span class="${mc(m)}">${m.toFixed(1)}%</span></div></div></div></div><div class="card"><div class="ct">Scaling Table</div><div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>NPs</th><th>Revenue</th><th>Billing</th><th>Costs</th><th>Profit</th><th>Margin</th><th>Profit/NP</th></tr></thead><tbody>${[1,2,3,5,8,10,15,20,25,30,np].filter((v,i,a)=>a.indexOf(v)===i&&v>0).sort((a,b)=>a-b).map(n=>{const rv=aRev*n,bf=rv*(billPct/100),c=sal*n+oh*12*n+bf,p=rv-c,mg=rv>0?(p/rv*100):0,ppnp=n>0?p/n:0,isT=n===np;return`<tr style="${isT?'background:var(--acd)':''}"><td style="font-weight:700;color:var(--wh)">${n}${isT?' ◀':''}</td><td style="color:var(--bl)">${$k(rv)}</td><td style="color:var(--mt)">${$k(bf)}</td><td style="color:var(--am)">${$k(c)}</td><td style="color:${p>=0?'var(--ac)':'var(--rd)'};font-weight:700">${$k(p)}</td><td class="${mc(mg)}">${mg.toFixed(1)}%</td><td style="color:var(--tx)">${$k(ppnp)}</td></tr>`}).join('')}</tbody></table></div></div>`}
+// PORTFOLIO with per-state salaries
+let portfolio=[{s:'NY',n:5,sal:165000},{s:'TX',n:3,sal:145000}];
+function initPt(){document.getElementById('ptSt').innerHTML=ST.map(s=>`<option value="${s}">${SN[s]}</option>`).join('');document.getElementById('ptSt').addEventListener('change',()=>{document.getElementById('ptSalIn').value=DEF_SAL[document.getElementById('ptSt').value]||165000});renderPtRows();rPt()}
+function addPort(){const s=document.getElementById('ptSt').value,n=+document.getElementById('ptN').value||1,sal=+document.getElementById('ptSalIn').value||DEF_SAL[s];const ex=portfolio.find(x=>x.s===s);if(ex){ex.n+=n;ex.sal=sal}else portfolio.push({s,n,sal});renderPtRows();rPt()}
+function delPort(i){portfolio.splice(i,1);renderPtRows();rPt()}
+function updPS(i,v){portfolio[i].sal=+v||0;rPt()}
+function renderPtRows(){document.getElementById('ptRows').innerHTML=portfolio.length?portfolio.map((p,i)=>`<div class="port-row"><span style="font-size:13px;font-weight:600;color:var(--wh)">${SN[p.s]}</span><span style="font-size:13px;color:var(--pp);font-weight:600">${p.n} NPs</span><input type="number" class="sal-input" value="${p.sal}" onchange="updPS(${i},this.value)" style="width:90px"><div class="bar" style="margin:0"><div class="tk" style="height:18px"><div class="fl" style="width:${Math.min(p.n/20*100,100)}%;background:var(--ac);font-size:9px"></div></div></div><div class="pr-del" onclick="delPort(${i})">✕</div></div>`).join(''):'<div style="font-size:13px;color:var(--mt);padding:12px">No markets added. Add above.</div>'}
+function rPt(){const pats=+document.getElementById('ptPats').value,intPct=+document.getElementById('ptInt').value,oh=+document.getElementById('ptOh').value,billPct=+document.getElementById('ptBill').value;document.getElementById('ptPatsV').textContent=pats;document.getElementById('ptIntV').textContent=intPct+'%';document.getElementById('ptOhV').textContent=$f(oh);document.getElementById('ptBillV').textContent=billPct+'%';
+  if(!portfolio.length){document.getElementById('ptResults').innerHTML='';return}
+  const tNP=portfolio.reduce((a,p)=>a+p.n,0);
+  const rows=portfolio.map(p=>{const rpp=blended(p.s,['Aetna','BCBS'],intPct);const rev=rpp*pats*12*p.n;const bf=rev*(billPct/100);const cost=p.sal*p.n+oh*12*p.n+bf;const profit=rev-cost;const margin=rev>0?(profit/rev*100):0;const ppnp=p.n>0?profit/p.n:0;return{...p,rpp,rev,bf,cost,profit,margin,ppnp}});
+  const tRev=rows.reduce((a,r)=>a+r.rev,0),tBill=rows.reduce((a,r)=>a+r.bf,0),tCost=rows.reduce((a,r)=>a+r.cost,0),tProf=tRev-tCost,tMarg=tRev>0?(tProf/tRev*100):0;
+  const tSetup=tNP*SETUP_COST;
+  document.getElementById('ptResults').innerHTML=`<div class="card" style="border-color:var(--ac20)"><div class="ct">Portfolio — ${tNP} Providers across ${portfolio.length} States</div><div class="res-grid"><div class="res-card revenue"><div class="rc-label">Total Revenue</div><div class="rc-val">${$k(tRev)}</div><div class="rc-sub">${$f(Math.round(tRev/12))}/mo</div></div><div class="res-card cost"><div class="rc-label">Total Costs</div><div class="rc-val">${$k(tCost)}</div><div class="rc-sub">Billing: ${$k(tBill)}</div></div><div class="res-card ${tProf>=0?'profit':'loss'}"><div class="rc-label">Net Profit</div><div class="rc-val">${$k(tProf)}</div><div class="rc-sub"><span class="${mc(tMarg)}">${tMarg.toFixed(1)}% margin</span></div></div><div class="res-card neutral"><div class="rc-label">Avg Profit / NP</div><div class="rc-val">${$k(tNP>0?tProf/tNP:0)}</div></div></div><div style="font-size:11px;color:var(--pp);padding:8px 12px;background:var(--bg3);border-radius:6px;margin-top:8px;border:1px solid var(--bd)">Y1 one-time setup: ${tNP} providers × $${SETUP_COST.toLocaleString()} = <b>$${tSetup.toLocaleString()}</b></div></div><div class="card"><div class="ct">By Market</div><div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>State</th><th>NPs</th><th>Salary</th><th>Rev/Pt</th><th>Revenue</th><th>Billing</th><th>Cost</th><th>Profit</th><th>Margin</th></tr></thead><tbody>${rows.map(r=>`<tr><td style="color:var(--wh);font-weight:600">${r.s}</td><td style="color:var(--pp)">${r.n}</td><td style="color:var(--tx)">${$f(r.sal)}</td><td style="color:var(--tx)">${$(r.rpp)}</td><td style="color:var(--bl);font-weight:600">${$k(r.rev)}</td><td style="color:var(--mt)">${$k(r.bf)}</td><td style="color:var(--am)">${$k(r.cost)}</td><td style="color:${r.profit>=0?'var(--ac)':'var(--rd)'};font-weight:700">${$k(r.profit)}</td><td class="${mc(r.margin)}">${r.margin.toFixed(1)}%</td></tr>`).join('')}<tr style="border-top:2px solid var(--ac)"><td style="color:var(--ac);font-weight:700">TOTAL</td><td style="color:var(--pp);font-weight:700">${tNP}</td><td></td><td></td><td style="color:var(--bl);font-weight:700">${$k(tRev)}</td><td style="color:var(--mt);font-weight:700">${$k(tBill)}</td><td style="color:var(--am);font-weight:700">${$k(tCost)}</td><td style="color:var(--ac);font-weight:700">${$k(tProf)}</td><td class="${mc(tMarg)}" style="font-weight:700">${tMarg.toFixed(1)}%</td></tr></tbody></table></div></div>`}
+// RAMP
+function initRm(){stOpts('rmSt','NY');document.getElementById('rmSt').addEventListener('change',()=>{document.getElementById('rmSal').value=DEF_SAL[document.getElementById('rmSt').value]||165000;rRm()});rRm()}
+function rRm(){const st=document.getElementById('rmSt').value,targ=+document.getElementById('rmTarg').value,months=+document.getElementById('rmMon').value,sal=+document.getElementById('rmSal').value;document.getElementById('rmTargV').textContent=targ;document.getElementById('rmMonV').textContent=months;document.getElementById('rmSalV').textContent=$f(sal);
+  const rpp=blended(st,['Aetna','BCBS'],5),mSal=sal/12,oh=600,billPct=5;let cumR=0,cumC=0,beM=null;const data=[];
+  for(let m=1;m<=12;m++){const pts=m<=months?Math.round(targ*(m/months)):targ;const rev=pts*rpp,bf=rev*(billPct/100),cost=mSal+oh+bf;cumR+=rev;cumC+=cost;const p=rev-cost;if(p>=0&&beM===null)beM=m;data.push({m,pts,rev,bf,cost,p,cumR,cumC,cumP:cumR-cumC})}
+  const mxR=Math.max(...data.map(d=>d.rev));
+  document.getElementById('rmResults').innerHTML=`<div class="card" style="border-color:var(--ac20)"><div class="ct">Ramp — ${SN[st]}</div><div class="res-grid"><div class="res-card neutral"><div class="rc-label">Rev / Patient</div><div class="rc-val">${$(rpp)}</div><div class="rc-sub">85% NP/PA</div></div><div class="res-card ${beM?'profit':'loss'}"><div class="rc-label">Break-Even</div><div class="rc-val">${beM?'Month '+beM:'N/A'}</div></div><div class="res-card revenue"><div class="rc-label">Year 1 Revenue</div><div class="rc-val">${$k(cumR)}</div></div><div class="res-card ${cumR-cumC>=0?'profit':'loss'}"><div class="rc-label">Year 1 Profit</div><div class="rc-val">${$k(cumR-cumC)}</div><div class="rc-sub">incl. 5% billing</div></div></div></div><div class="card"><div class="ct">Timeline</div><div class="tl-grid">${data.map(d=>{const pct=(d.rev/mxR*100).toFixed(0);const isB=d.m===beM;return`<div class="tl-month" style="${isB?'border-color:var(--ac);background:var(--acd)':''}"><div style="font-size:10px;font-weight:700;color:var(--mt);text-transform:uppercase">Mo ${d.m}</div><div style="font-family:var(--disp);font-size:16px;font-weight:700;color:var(--pp);margin:4px 0">${d.pts}</div><div style="font-size:10px;color:var(--mt)">patients</div><div style="height:4px;background:var(--bg);border-radius:2px;margin:6px 0;overflow:hidden"><div style="height:100%;width:${pct}%;background:${d.p>=0?'var(--ac)':'var(--am)'};border-radius:2px"></div></div><div style="font-family:var(--disp);font-size:13px;font-weight:700;color:${d.p>=0?'var(--ac)':'var(--rd)'}">${$k(d.p)}</div>${isB?'<div style="font-size:9px;color:var(--ac);font-weight:700;margin-top:4px">★ BREAK-EVEN</div>':''}</div>`}).join('')}</div></div><div class="card"><div class="ct">Cumulative</div><div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>Month</th><th>Patients</th><th>Revenue</th><th>Billing</th><th>Cost</th><th>P/L</th><th>Cumulative</th></tr></thead><tbody>${data.map(d=>`<tr${d.m===beM?' style="background:var(--acd)"':''}><td style="color:var(--wh);font-weight:600">Mo ${d.m}</td><td style="color:var(--pp)">${d.pts}</td><td style="color:var(--bl)">${$f(Math.round(d.rev))}</td><td style="color:var(--mt)">${$f(Math.round(d.bf))}</td><td style="color:var(--am)">${$f(Math.round(d.cost))}</td><td style="color:${d.p>=0?'var(--ac)':'var(--rd)'};font-weight:600">${$f(Math.round(d.p))}</td><td style="color:${d.cumP>=0?'var(--ac)':'var(--rd)'};font-weight:700">${$f(Math.round(d.cumP))}</td></tr>`).join('')}</tbody></table></div></div>`}
+// SCENARIO
+function initSc(){stOpts('scASt','NY');stOpts('scBSt','TX');rSc()}
+function rSc(){const rd=pfx=>{const st=document.getElementById(pfx+'St').value,stf=+document.getElementById(pfx+'Stf').value,pts=+document.getElementById(pfx+'Pts').value,sal=+document.getElementById(pfx+'Sal').value;document.getElementById(pfx+'StfV').textContent=stf;document.getElementById(pfx+'PtsV').textContent=pts;document.getElementById(pfx+'SalV').textContent=$f(sal);const rpp=blended(st,['Aetna','BCBS'],5),rev=rpp*pts*12*stf,bf=rev*0.05,cost=sal*stf+600*12*stf+bf,profit=rev-cost,margin=rev>0?(profit/rev*100):0,ppnp=stf>0?profit/stf:0;return{st,stf,pts,sal,rpp,rev,bf,cost,profit,margin,ppnp,label:SN[st]}};
+  const a=rd('scA'),b=rd('scB');
+  const rows=[['State',a.label,b.label],['Providers',''+a.stf,''+b.stf],['Pts/Mo',''+a.pts,''+b.pts],['Salary',$f(a.sal),$f(b.sal)],['Rev/Pt',$(a.rpp),$(b.rpp)],['Revenue',$k(a.rev),$k(b.rev)],['Billing (5%)',$k(a.bf),$k(b.bf)],['Costs',$k(a.cost),$k(b.cost)],['Profit',$k(a.profit),$k(b.profit)],['Margin',a.margin.toFixed(1)+'%',b.margin.toFixed(1)+'%'],['Profit/NP',$k(a.ppnp),$k(b.ppnp)]];
+  const w=a.profit>b.profit?'A':'B';
+  document.getElementById('scResults').innerHTML=`<div class="card" style="border-color:${w==='A'?'var(--ac20)':'rgba(255,183,77,.3)'}"><div class="ct">Result — Scenario ${w} Wins</div><div class="scn-grid"><div class="scn-col"><div style="font-size:13px;font-weight:700;text-align:center;color:var(--ac);margin-bottom:12px">SCENARIO A</div>${rows.map(([l,av])=>`<div class="scn-row"><span style="color:var(--mt)">${l}</span><span style="color:var(--wh);font-weight:600">${av}</span></div>`).join('')}</div><div class="scn-vs">VS</div><div class="scn-col"><div style="font-size:13px;font-weight:700;text-align:center;color:var(--am);margin-bottom:12px">SCENARIO B</div>${rows.map(([l,,bv])=>`<div class="scn-row"><span style="color:var(--mt)">${l}</span><span style="color:var(--wh);font-weight:600">${bv}</span></div>`).join('')}</div></div><div style="margin-top:16px"><div class="fl2">Delta (B − A)</div><div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>Metric</th><th>Difference</th><th>Winner</th></tr></thead><tbody><tr><td style="color:var(--wh)">Revenue</td><td style="color:${b.rev>a.rev?'var(--ac)':'var(--rd)'};font-weight:600">${$k(b.rev-a.rev)}</td><td style="color:var(--mt)">${b.rev>a.rev?'B':'A'}</td></tr><tr><td style="color:var(--wh)">Costs</td><td style="color:${b.cost<a.cost?'var(--ac)':'var(--rd)'};font-weight:600">${$k(b.cost-a.cost)}</td><td style="color:var(--mt)">${b.cost<a.cost?'B':'A'}</td></tr><tr><td style="color:var(--wh)">Profit</td><td style="color:${b.profit>a.profit?'var(--ac)':'var(--rd)'};font-weight:700">${$k(b.profit-a.profit)}</td><td style="color:${b.profit>a.profit?'var(--ac)':'var(--rd)'};font-weight:700">${b.profit>a.profit?'B':'A'} by ${$k(Math.abs(b.profit-a.profit))}</td></tr><tr><td style="color:var(--wh)">Profit/NP</td><td style="color:${b.ppnp>a.ppnp?'var(--ac)':'var(--rd)'};font-weight:600">${$k(b.ppnp-a.ppnp)}</td><td style="color:var(--mt)">${b.ppnp>a.ppnp?'B':'A'} more efficient</td></tr></tbody></table></div></div></div>`}
+// ============================================================
+// STATE EXPANSION INTELLIGENCE ENGINE
+// ============================================================
+// Research compiled: Feb 2026
+// Sources: DEA Federal Register, state statutes, CCHP, AANP, 
+// law firm analyses (Garfunkel Wild, Sheppard Health Law, 
+// Akerman LLP, Weiss Zarett), HHS.gov, state BON/TMB sites
+// ============================================================
+
+const FEDBASE = {
+  dea_ext: 'DEA 4th Temporary Extension: Schedule II-V via audio-video telehealth WITHOUT in-person eval through 12/31/2026',
+  dea_src: 'Federal Register 2025-24123 (Dec 31, 2025); HHS Press Release Jan 2, 2026',
+  dea_note: 'State laws may be MORE restrictive. State law always applies on top of federal.'
+};
+
+const REG = {
+NY:{
+  name:'New York',scope:'Full Practice Authority',scopeConf:'Confirmed',scopeSrc:'AANP 2025 State Practice Environment Map; NurseJournal.org (Dec 2025)',
+  scopeNote:'NPs have full practice authority. Can evaluate, diagnose, prescribe (incl controlled substances) independently.',
+  csRx:'Permitted via telehealth per NYSDOH final rule (May 21, 2025). Exception allows CS prescribing via telehealth when consistent with DEA rules. Currently permitted through 12/31/2026 under federal extension.',
+  csConf:'Confirmed',csSrc:'10 NYCRR §80.63(d)-(e); NYSDOH Guidance May 30, 2025; Nixon Peabody analysis Jun 2025',
+  csNote:'NY adopted rules mirroring proposed DEA framework but included exception for federal compliance. Telehealth CS prescribing permitted while DEA extension active.',
+  inPerson:'None required while DEA extension active. Post-2026: may require in-person eval with exceptions for psych.',
+  inPersonConf:'Confirmed',
+  teleRules:'Audio-video required for CS prescribing. Audio-only limited to certain follow-ups. Telehealth broadly defined under PHL §2999-cc.',
+  supervision:'None (FPA state)',malpractice:'High ($7,200-$21,600/yr psych MD; NP ~$2,500-$5,000)',malpMD:'$7,200-$21,600',malpNP:'$2,500-$5,000',
+  malpConf:'Confirmed',malpSrc:'MalpracticeInsuranceFinder.com 2025; Physicians Thrive',
+  tort:'No caps on non-economic damages. Plaintiff-friendly. NY is consistently one of the most expensive states for malpractice.',
+  parity:'Full telehealth parity law. Insurers must reimburse telehealth at same rate as in-person for covered services.',
+  reimb:'Strong commercial rates, high cost-of-living market. BCBS and Aetna competitive. Medicaid rates lower but volume available.',
+  corp:'Corporate practice of medicine doctrine applies. Practice must be owned/operated by licensed physicians. PC structure required.',
+  corpNote:'Significant: PLLC or PC structure needed. Cannot be owned by non-physician business entity.',
+  color:'green',score:82,
+  bullets:['Full NP practice authority — no collaboration required','CS telehealth prescribing permitted under federal extension through 2026','No in-person visit requirement currently','High malpractice costs (1.8× national avg)','Corporate practice doctrine requires MD-owned entity','Strong telehealth parity law'],
+  flags:{cs:'✅ Permitted',inPerson:'✅ None required',supervision:'✅ None',reimb:'Strong',litigation:'⚠️ High cost',corp:'⚠️ PC/PLLC required'},
+  pa:{
+    scope:'Supervised Practice — physician supervision required (continuous but not physical presence)',
+    scopeConf:'Confirmed',
+    scopeSrc:'NY Educ. Law §6542; 10 NYCRR §94.2; Barton Associates Jun 2024; NYSSPA FAQ',
+    csRx:'PAs CAN prescribe Schedule II-V controlled substances in outpatient settings when delegated by supervising physician. Full Sch II prescribing authority confirmed.',
+    csConf:'Confirmed',
+    csSrc:'NY PHL §3702(1),(3); NYSDOH Reference Info; Cornell LII 10 NYCRR §94.2',
+    ratio:'1:6 in private practice (increased from 1:4 per A.8378-A/S.9038-A, eff. Feb 22, 2025); 1:8 in DOCCS; no limit in hospital settings',
+    ratioConf:'Confirmed',
+    ratioSrc:'AAPA Dec 2024; MSSNY Nov 2024; NY Educ. Law §6542(3)',
+    supervision:'Continuous supervision required but does NOT require physical presence. Physician assigns acts/duties within scope.',
+    supConf:'Confirmed',
+    supSrc:'10 NYCRR §94.2(a); NY Educ. Law §6542',
+    salary:'$120,000-$145,000/yr (psych PA). NY avg $138,410 all specialties.',
+    salarySrc:'BLS 2023; ZipRecruiter Dec 2025; Opportunity Healthcare 2025',
+    malpractice:'$1,700-$3,500/yr (psych PA). Much lower than MD.',
+    malpSrc:'CarePro Insurance 2025; general industry data',
+    vsNP:'PAs can prescribe Sch II (NPs also can in NY FPA). Key difference: PAs always require supervision while NY NPs have FPA. NPs offer greater operational independence. PAs have slightly lower malpractice costs. Both viable in NY — NP model is PREFERRED for telehealth scalability due to independence.',
+    verdict:'NP PREFERRED — FPA means no supervision overhead, better for 100% telehealth scale. PAs viable but add supervision complexity and 1:6 ratio cap.'
+  }
+},
+NJ:{
+  name:'New Jersey',scope:'Reduced Practice',scopeConf:'Confirmed',scopeSrc:'AANP 2025; NJ BON; HJN Blog May 2025',
+  scopeNote:'NPs require collaborative agreement with physician. Not full independence.',
+  csRx:'STATE LAW requires in-person exam before prescribing Sch II CS via telehealth, AND subsequent in-person visit every 3 months. Exception ONLY for Sch II stimulants for minors (<18) with parental consent via audio-video.',
+  csConf:'Confirmed',csSrc:'NJ Statute C.45:1-62(e); N.J.A.C. 13:35-6B.6(c)-(d); Garfunkel Wild Nov 2024',
+  csNote:'DEAL-BREAKER for 100% telehealth adult ADHD stimulant model. In-person requirement is STATE LAW, not just federal. DEA extension does NOT override NJ state requirement.',
+  inPerson:'Required: Initial in-person exam + every 3 months for Sch II. This is permanent state law.',
+  inPersonConf:'Confirmed',
+  teleRules:'Audio-video for CS. Patient must be informed if provider is not a physician. Must offer physician option.',
+  supervision:'Collaborative agreement required (reduced practice)',malpractice:'High ($6,000-$15,000/yr psych; NJ is top-4 most expensive)',malpMD:'$6,000-$15,000',malpNP:'$3,000-$6,000',
+  malpConf:'Likely',malpSrc:'Physicians Thrive; Statista data',
+  tort:'No caps on damages. Plaintiff-friendly jurisdiction.',
+  parity:'Telehealth parity required. Cannot deny coverage for services that would be covered in-person.',
+  reimb:'Good commercial rates. Strong BCBS/Aetna market.',
+  corp:'Corporate practice restrictions apply. Professional corporation required.',
+  corpNote:'Similar to NY — physician-owned entity needed.',
+  color:'red',score:28,
+  bullets:['🚫 STATE LAW requires in-person for Sch II every 3 months','Only exception: stimulants for minors with parental consent','Reduced NP practice — collaboration agreement required','High malpractice costs','Good reimbursement rates cannot offset operational impossibility','INCOMPATIBLE with 100% telehealth adult psychiatry model'],
+  flags:{cs:'🚫 In-person required',inPerson:'🚫 Every 3 months',supervision:'⚠️ Collab required',reimb:'Good',litigation:'⚠️ High',corp:'⚠️ PC required'}
+},
+CT:{
+  name:'Connecticut',scope:'Full Practice Authority',scopeConf:'Confirmed',scopeSrc:'AANP 2025; Barton Associates Dec 2024',
+  scopeNote:'NPs have full practice authority. Can practice independently.',
+  csRx:'State law PROHIBITS Sch I/II/III via telehealth EXCEPT: non-opioid Sch II/III for treatment of psychiatric disability or substance use disorder. This exception covers ADHD stimulant prescribing for psychiatric patients.',
+  csConf:'Confirmed',csSrc:'CGS §19a-906(c) as amended by HB 7287, PA 25-168 §116 (2025); CCHP Jan 2026; CHA Nov 2024',
+  csNote:'WORKABLE for psychiatry. The psychiatric disability exception explicitly covers stimulant prescribing for ADHD and other psych conditions. Must be consistent with Ryan Haight Act (currently satisfied by DEA extension).',
+  inPerson:'None required for psych CS prescribing under the exception, while DEA extension active.',
+  inPersonConf:'Confirmed',
+  teleRules:'Must use e-prescribing for CS. Audio-video for initial eval. Audio-only permitted for established patient med management (CPT 98012/98013 eff. 1/1/2025).',
+  supervision:'None (FPA state)',malpractice:'High ($5,000-$12,000 psych MD). CT ranks among expensive states.',malpMD:'$5,000-$12,000',malpNP:'$2,500-$5,000',
+  malpConf:'Likely',malpSrc:'Griffith & Harris 2025; general industry data',
+  tort:'No caps on non-economic damages. Moderate-to-plaintiff-friendly.',
+  parity:'Strong telehealth parity. Cannot deny reimbursement for telehealth services.',
+  reimb:'Good commercial rates. Strong BCBS market. Aetna HQ state.',
+  corp:'Less restrictive than NY/NJ for practice ownership.',
+  corpNote:'Standard professional licensing requirements apply.',
+  color:'yellow',score:68,
+  bullets:['Psychiatric exception allows Sch II stimulant prescribing via telehealth','Full NP practice authority','No in-person required under current framework','Must use e-prescribing for all CS','Exception is specifically for psychiatric disability — must document diagnosis','High malpractice costs but manageable'],
+  flags:{cs:'✅ Psych exception',inPerson:'✅ None (with exception)',supervision:'✅ None',reimb:'Good',litigation:'⚠️ Moderate-high',corp:'✅ Standard'}
+},
+TX:{
+  name:'Texas',scope:'Restricted Practice',scopeConf:'Confirmed',scopeSrc:'AANP 2025; TX BON; Opportunity Healthcare Feb 2025; Dike Law Group',
+  scopeNote:'RESTRICTED. NPs must have written delegation agreement + prescriptive authority agreement with supervising MD. MD must be within 75 miles. Max 7 NPs per MD (except hospital/underserved). 10% chart review required. Monthly documented meetings required. NPs CANNOT prescribe Sch II.',
+  csRx:'NPs cannot prescribe Schedule II in Texas (limited to Sch III-V under delegation). MDs can prescribe Sch II via telehealth under DEA extension. Texas SB 2527 (2023) added requirements for telehealth CS prescribing: audiovisual eval required, patient cannot select specific CS, reporting to regulatory board required.',
+  csConf:'Confirmed',csSrc:'TX Occ Code §157.0511-0512; TX BON Rule 22-11-222.5; nurse.org; Opportunity Healthcare; TX SB 2527 analysis',
+  csNote:'CRITICAL LIMITATION: NPs cannot prescribe Sch II (Adderall, Ritalin, Vyvanse). Only the supervising MD can. This means every ADHD stimulant patient needs an MD prescriber, which breaks the NP-led scalability model. Sch III-V (gabapentin, some benzos, etc.) are fine under NP delegation.',
+  inPerson:'No state-specific in-person requirement for telehealth CS prescribing (beyond federal). DEA extension covers through 2026.',
+  inPersonConf:'Confirmed',
+  teleRules:'Synchronous audio-video or audio-only if A/V not feasible. HIPAA-compliant. E-prescribing mandatory since 2021. Must check TX PDMP before prescribing opioids/benzos/barbiturates/carisoprodol.',
+  supervision:'Restricted: Written delegation + prescriptive authority agreement. MD within 75 miles. 10% chart review. Monthly meetings. Max 7 NP:1 MD ratio (exceptions for hospitals/underserved).',
+  malpractice:'Moderate ($4,000-$8,000 psych). TX has strong tort reform.',malpMD:'$4,000-$8,000',malpNP:'$1,500-$3,000',
+  malpConf:'Confirmed',malpSrc:'Griffith & Harris; Physicians Thrive; TX tort reform since 2003',
+  tort:'Strong tort reform (2003 Prop 12). $250K cap on non-economic damages per defendant. Significantly reduces malpractice costs and litigation risk.',
+  parity:'Telehealth parity for commercial insurance. Medicaid covers telehealth broadly.',
+  reimb:'Moderate-to-good commercial rates. Large market. Lower cost of living offsets slightly lower rates.',
+  corp:'Texas allows physician-owned PCs. Corporate practice doctrine exists but is workable.',
+  corpNote:'Practice must be physician-owned. Standard TX entity structure.',
+  color:'yellow',score:55,
+  bullets:['⚠️ NPs CANNOT prescribe Schedule II (no Adderall/Ritalin)','Only MDs can prescribe Sch II — breaks NP-led model for ADHD','Restricted NP practice: delegation agreement + 75-mile MD proximity','Strong tort reform = low malpractice costs','Good telehealth infrastructure, large patient market','Viable for non-stimulant psychiatry; ADHD requires MD prescriber workaround'],
+  flags:{cs:'⚠️ NPs: no Sch II',inPerson:'✅ None (DEA ext)',supervision:'🚫 Restricted + delegation',reimb:'Moderate',litigation:'✅ Low (tort reform)',corp:'⚠️ MD-owned required'},
+  pa:{
+    scope:'Supervised Practice — prescriptive authority agreement with delegating physician required',
+    scopeConf:'Confirmed',
+    scopeSrc:'TX Occ Code §157.012, §157.0511-0512; TMB Prescribing & Supervision FAQ; Belo Law Nov 2024',
+    csRx:'PAs CANNOT prescribe Schedule II in outpatient settings. Identical restriction to NPs. Sch II only permitted in: (1) hospital facility-based practice (24hr+ inpatient, filled at hospital pharmacy), or (2) hospice with terminal illness certification. Outpatient telehealth Sch II is NOT possible for PAs.',
+    csConf:'Confirmed',
+    csSrc:'TX Occ Code §157.0511(b-1); TMB Facility-Based Prescriptive Delegation FAQ; StatPearls/NCBI NBK574557; TMB Q274',
+    ratio:'1:7 FTE max (PAs and APRNs combined). No limit in hospital or medically underserved population settings.',
+    ratioConf:'Confirmed',
+    ratioSrc:'TMB Delegation FAQs; TX Occ Code §157.0512; Belo Law Nov 2024',
+    supervision:'Prescriptive authority agreement required (signed, written). Monthly meetings required (can be virtual per agreements post-9/1/2019). Chart review required (number determined by physician and PA). MD must register PA with TMB before delegation begins. Alternate physician must be designated.',
+    supConf:'Confirmed',
+    supSrc:'TX Occ Code §157.0512; TMB Prescribing & Supervision FAQ; TMA Protocols guidance',
+    salary:'$120,000-$145,000/yr (psych PA). TX avg $134,780 all specialties (COL-adjusted ~$144,903).',
+    salarySrc:'BLS 2023; PA Life Mar 2025; Opportunity Healthcare 2025',
+    malpractice:'$1,500-$3,000/yr (psych PA in TX). Very low due to tort reform.',
+    malpSrc:'CarePro Insurance 2025; TX tort reform benefits',
+    vsNP:'PAs and NPs face the IDENTICAL Schedule II prohibition in Texas. Neither can prescribe Adderall/Ritalin/Vyvanse in outpatient settings — only MDs can. PAs have the same 1:7 combined ratio with NPs. Supervision requirements are functionally identical (both need prescriptive authority agreements, chart review, monthly meetings). There is NO prescriptive advantage to PAs over NPs in TX for stimulant prescribing.',
+    verdict:'NO ADVANTAGE over NPs for ADHD. Both face same Sch II block. For non-stimulant psych, PAs are equivalent to NPs operationally. NPs may be slightly preferred due to larger psychiatric NP workforce pipeline. The ONLY solution for Sch II in TX is an MD prescriber model regardless of whether you use PAs or NPs for non-stimulant caseload.'
+  }
+},
+FL:{
+  name:'Florida',scope:'Restricted Practice (with exceptions)',scopeConf:'Confirmed',scopeSrc:'FL Statute §464.012; FL §456.47; CCHP',
+  scopeNote:'FL has a unique system. Psych NPs under §394.455 can prescribe psychotropic CS within protocol with psychiatrist. FL §464.0123 allows some NPs to register for autonomous practice. General APRNs need supervising physician protocol.',
+  csRx:'FL state law PROHIBITS Sch II via telehealth EXCEPT for: (1) treatment of psychiatric disorders, (2) hospice, (3) nursing home, (4) hospital inpatient. The PSYCHIATRIC DISORDER EXCEPTION makes this workable for 100% telehealth psych.',
+  csConf:'Confirmed',csSrc:'FL §456.47(2)(c) as amended by SB 312 (2022); FL Senate FAQ; Akerman LLP Mar 2025; FAFP Telehealth FAQ',
+  csNote:'WORKABLE for psychiatry. The psychiatric disorder exception explicitly permits Sch II prescribing via telehealth for psychiatric treatment. Sch III-V permitted generally. Psychiatric NPs can prescribe psychotropic CS under protocol with psychiatrist.',
+  inPerson:'None required for psychiatric telehealth CS prescribing under the state exception.',
+  inPersonConf:'Confirmed',
+  teleRules:'Audio-video required (not audio-only phone or email per §456.47). Out-of-state providers can register as telehealth providers in FL.',
+  supervision:'Psychiatric NPs: protocol with psychiatrist. Regular APRNs: supervisory protocol. FL §464.0123 allows independent practice registration for qualifying NPs.',
+  malpractice:'Very high for some specialties but moderate for psych ($5,000-$10,000). FL has no caps on damages.',malpMD:'$5,000-$10,000',malpNP:'$2,500-$5,000',
+  malpConf:'Likely',malpSrc:'Griffith & Harris; ERA Locums',
+  tort:'No caps on non-economic damages. Plaintiff-friendly. Nuclear verdicts common in FL. However, psych is lower-risk than surgical specialties.',
+  parity:'Telehealth parity law exists. Commercial insurers must cover.',
+  reimb:'Good commercial rates. Large market. Significant Medicaid population.',
+  corp:'FL corporate practice rules exist but are more flexible than NY.',
+  corpNote:'Physician-led entity structure typical.',
+  color:'yellow',score:62,
+  bullets:['Psychiatric disorder exception allows Sch II telehealth prescribing','Psych NPs can prescribe psychotropic CS under protocol with psychiatrist','No in-person required for psychiatric telehealth','Large patient market (3rd largest state)','High litigation risk (no damage caps) but psych is lower-risk','Supervision structure requires psychiatrist protocol'],
+  flags:{cs:'✅ Psych exception',inPerson:'✅ None (psych)',supervision:'⚠️ Protocol required',reimb:'Good',litigation:'⚠️ High (no caps)',corp:'⚠️ MD-led required'}
+},
+PA:{
+  name:'Pennsylvania',scope:'Reduced Practice',scopeConf:'Confirmed',scopeSrc:'AANP 2025; HJN Blog May 2025',
+  scopeNote:'Collaborative agreement required with physician. NPs can prescribe CS under collaboration.',
+  csRx:'No state-specific telehealth Sch II prohibition found. Permitted under DEA extension through 2026.',
+  csConf:'Likely',csSrc:'CCHP; general PA telehealth law review',
+  csNote:'PA does not appear to have a state-level prohibition on Sch II telehealth prescribing for psychiatry. Workable under current framework.',
+  inPerson:'No state-specific in-person requirement for telehealth CS found.',inPersonConf:'Likely',
+  teleRules:'Broad telehealth authorization. Audio-video and audio-only permitted.',
+  supervision:'Collaborative agreement required',malpractice:'High ($6,000-$14,000 psych). PA is top-4 most expensive for malpractice nationally.',malpMD:'$6,000-$14,000',malpNP:'$3,000-$6,000',
+  malpConf:'Confirmed',malpSrc:'Statista; Physicians Thrive',
+  tort:'No caps on non-economic damages. Philadelphia is one of most plaintiff-friendly jurisdictions in US.',
+  parity:'Telehealth parity law.',reimb:'Good commercial rates. Strong BCBS market.',
+  corp:'Corporate practice restrictions apply.',corpNote:'Standard PC structure.',
+  color:'yellow',score:58,
+  bullets:['No apparent state prohibition on Sch II telehealth for psych','Collaborative agreement required for NPs','Very high malpractice costs (top-4 nationally)','Philadelphia is extremely plaintiff-friendly','Good reimbursement rates','Workable but expensive from risk perspective'],
+  flags:{cs:'✅ Likely permitted',inPerson:'✅ None found',supervision:'⚠️ Collab required',reimb:'Good',litigation:'🚫 Very high',corp:'⚠️ PC required'}
+},
+MA:{
+  name:'Massachusetts',scope:'Full Practice Authority (after transition)',scopeConf:'Confirmed',scopeSrc:'AANP 2025; HJN Blog May 2025',
+  scopeNote:'Full practice authority after 2 years of supervised prescriptive practice. Then independent.',
+  csRx:'No state-specific telehealth Sch II prohibition for psychiatry found. Permitted under DEA extension.',
+  csConf:'Likely',csSrc:'CCHP; MA telehealth law review',
+  csNote:'MA appears workable. No unique state-level barrier to psychiatric telehealth CS prescribing.',
+  inPerson:'No state-specific in-person requirement found.',inPersonConf:'Likely',
+  teleRules:'Broad telehealth authorization. Strong state support for telehealth.',
+  supervision:'FPA after 2-year transition',malpractice:'Moderate-high ($5,000-$10,000 psych)',malpMD:'$5,000-$10,000',malpNP:'$2,500-$4,500',
+  malpConf:'Likely',malpSrc:'General industry data',
+  tort:'Moderate. Some tort reform measures in place.',
+  parity:'Strong telehealth parity.',reimb:'Good-to-strong commercial rates. Major academic medical center market.',
+  corp:'Corporate practice doctrine applies. Professional corporation required.',corpNote:'Standard.',
+  color:'green',score:74,
+  bullets:['Full NP practice authority (after 2-year transition)','No apparent state barrier to Sch II telehealth for psych','Strong telehealth parity and support','Moderate malpractice costs','Good reimbursement environment','2-year NP transition period is manageable operational friction'],
+  flags:{cs:'✅ Likely permitted',inPerson:'✅ None found',supervision:'✅ FPA (after 2yr)',reimb:'Strong',litigation:'⚠️ Moderate',corp:'⚠️ PC required'}
+},
+MD:{
+  name:'Maryland',scope:'Full Practice Authority',scopeConf:'Confirmed',scopeSrc:'AANP 2025; Barton Associates',
+  scopeNote:'Full practice authority. NPs practice independently.',
+  csRx:'No state-specific telehealth Sch II prohibition for psychiatry found. Permitted under DEA extension.',
+  csConf:'Likely',csSrc:'CCHP; MD telehealth review',
+  csNote:'Workable. No unique barriers identified.',
+  inPerson:'No state-specific requirement found.',inPersonConf:'Likely',
+  teleRules:'Broad telehealth support. Audio-video and store-and-forward.',
+  supervision:'None (FPA)',malpractice:'Moderate ($4,000-$8,000 psych)',malpMD:'$4,000-$8,000',malpNP:'$2,000-$3,500',
+  malpConf:'Likely',malpSrc:'Industry data',
+  tort:'Some tort reform. Health Claims Arbitration Office provides structured process.',
+  parity:'Telehealth parity.',reimb:'Good commercial rates. DC metro market spillover.',
+  corp:'Less restrictive.',corpNote:'Standard.',
+  color:'green',score:78,
+  bullets:['Full NP practice authority','No apparent state barrier to Sch II telehealth','Moderate malpractice costs','Good reimbursement (DC metro market)','Structured tort process reduces litigation risk','Proximity to NY base — easy to manage'],
+  flags:{cs:'✅ Likely permitted',inPerson:'✅ None found',supervision:'✅ None',reimb:'Good',litigation:'✅ Moderate',corp:'✅ Standard'}
+},
+VA:{
+  name:'Virginia',scope:'Restricted Practice (transitioning)',scopeConf:'Confirmed',scopeSrc:'AANP 2025; HJN Blog',
+  scopeNote:'Restricted but evolving. Practice agreement with physician required. VA has been considering FPA legislation.',
+  csRx:'No state-specific telehealth Sch II prohibition for psychiatry found. Permitted under DEA extension.',
+  csConf:'Likely',csSrc:'CCHP; VA telehealth review',
+  csNote:'Workable under current framework.',
+  inPerson:'No state-specific requirement found.',inPersonConf:'Likely',
+  teleRules:'Broad telehealth support.',
+  supervision:'Practice agreement required',malpractice:'Moderate ($4,000-$8,000)',malpMD:'$4,000-$8,000',malpNP:'$2,000-$3,500',
+  malpConf:'Likely',malpSrc:'Industry data',
+  tort:'$2.55M cap on medical malpractice recoveries (one of strictest). Very favorable for providers.',
+  parity:'Telehealth parity.',reimb:'Good. DC/NoVA metro premium market.',
+  corp:'Standard restrictions.',corpNote:'Standard.',
+  color:'green',score:72,
+  bullets:['No apparent Sch II telehealth barrier for psych','$2.55M malpractice cap — very provider-friendly','Good reimbursement (DC metro area)','Practice agreement required for NPs','Evolving toward more NP autonomy','Strong telehealth infrastructure'],
+  flags:{cs:'✅ Likely permitted',inPerson:'✅ None found',supervision:'⚠️ Agreement required',reimb:'Good',litigation:'✅ Low (strict caps)',corp:'✅ Standard'}
+},
+IL:{
+  name:'Illinois',scope:'Reduced Practice',scopeConf:'Confirmed',scopeSrc:'AANP 2025; HJN Blog',
+  scopeNote:'Collaborative agreement required. FPA legislation has been attempted but not passed.',
+  csRx:'No state-specific telehealth Sch II prohibition for psychiatry found.',
+  csConf:'Likely',csSrc:'CCHP; IL review',
+  csNote:'Workable under DEA extension.',
+  inPerson:'No state-specific requirement found.',inPersonConf:'Likely',
+  teleRules:'Broad telehealth support.',
+  supervision:'Collaborative agreement required',malpractice:'Very high ($8,000-$16,000 psych). IL is one of most expensive states.',malpMD:'$8,000-$16,000',malpNP:'$3,500-$7,000',
+  malpConf:'Confirmed',malpSrc:'Griffith & Harris; industry data',
+  tort:'No caps on damages. Cook County (Chicago) is extremely plaintiff-friendly. Nuclear verdicts common.',
+  parity:'Telehealth parity.',reimb:'Good commercial rates. Large market.',
+  corp:'Corporate practice doctrine applies.',corpNote:'Standard PC.',
+  color:'yellow',score:52,
+  bullets:['No apparent Sch II telehealth barrier','Collaborative agreement required for NPs','VERY high malpractice costs','Cook County is among most plaintiff-friendly in US','Good reimbursement and large market','High operational cost from litigation risk'],
+  flags:{cs:'✅ Likely permitted',inPerson:'✅ None found',supervision:'⚠️ Collab required',reimb:'Good',litigation:'🚫 Very high',corp:'⚠️ PC required'}
+},
+CA:{
+  name:'California',scope:'Transitioning to FPA (by 2026)',scopeConf:'Confirmed',scopeSrc:'AB 890 (2020); HJN Blog May 2025',
+  scopeNote:'Transitioning under AB 890. NPs need 4,600 supervised hours then can practice independently. Full implementation expected 2026.',
+  csRx:'CA treats video calls same as in-person for starting ADHD medication. More flexible than many states.',
+  csConf:'Likely',csSrc:'Denver Family Counseling Oct 2025; CCHP',
+  csNote:'Workable. CA is telehealth-friendly for psych CS prescribing.',
+  inPerson:'No state-specific in-person requirement for telehealth CS.',inPersonConf:'Likely',
+  teleRules:'Broad telehealth. Video eval sufficient for CS initiation.',
+  supervision:'Transitioning. Currently need standardized procedure agreement until 4,600 hrs completed.',
+  malpractice:'Moderate ($5,000-$10,000 psych). CA has MICRA tort reform.',malpMD:'$5,000-$10,000',malpNP:'$2,500-$4,500',
+  malpConf:'Confirmed',malpSrc:'Griffith & Harris; MICRA caps',
+  tort:'MICRA: $350K cap on non-economic damages (increased from $250K in 2023, will reach $750K by 2033). Very provider-friendly.',
+  parity:'Strong telehealth parity.',reimb:'Good rates but high overhead. Large market.',
+  corp:'Relaxed under AB 890 for qualifying NPs. Physician-owned entities standard.',corpNote:'Evolving.',
+  color:'green',score:70,
+  bullets:['Telehealth-friendly for psych CS prescribing','Transitioning to FPA (4,600 hr requirement)','MICRA tort reform = moderate malpractice costs','Largest state market by population','High operating costs but strong rates','Full implementation of NP independence expected 2026'],
+  flags:{cs:'✅ Permitted',inPerson:'✅ None',supervision:'⚠️ Transitioning',reimb:'Good',litigation:'✅ MICRA caps',corp:'⚠️ Transitioning'}
+},
+// Grace MD's States
+TN:{
+  name:'Tennessee',scope:'Restricted Practice',scopeConf:'Confirmed',scopeSrc:'AANP 2025',
+  scopeNote:'Restricted. Supervision required. Tennessee has been resistant to FPA.',
+  csRx:'No state-specific telehealth Sch II prohibition for psych found.',csConf:'Unclear',csSrc:'Limited sources',
+  csNote:'Needs deeper verification. No clear prohibition identified but also not explicitly confirmed.',
+  inPerson:'No specific requirement found.',inPersonConf:'Unclear',
+  teleRules:'Telehealth generally authorized.',
+  supervision:'Supervision required (restricted)',malpractice:'Low-moderate ($3,000-$6,000). TN has tort reform.',malpMD:'$3,000-$6,000',malpNP:'$1,500-$3,000',
+  malpConf:'Likely',malpSrc:'Industry data',
+  tort:'$750K cap on non-economic damages. Provider-friendly.',
+  parity:'Telehealth parity exists.',reimb:'Moderate. Lower reimbursement market.',
+  corp:'Standard.',corpNote:'Standard.',
+  color:'yellow',score:50,
+  bullets:['Grace MD\'s recommended state','Restricted NP practice — supervision required','Tort reform provides malpractice protection','Lower reimbursement market','CS telehealth rules need further verification','Moderate expansion difficulty'],
+  flags:{cs:'⚠️ Unclear',inPerson:'⚠️ Unclear',supervision:'🚫 Restricted',reimb:'Moderate',litigation:'✅ Low',corp:'✅ Standard'},grace:true
+},
+MI:{
+  name:'Michigan',scope:'Full Practice Authority (as of 2025)',scopeConf:'Confirmed',scopeSrc:'HJN Blog May 2025 — MI joined FPA states in 2025',
+  scopeNote:'Michigan granted FPA to NPs in 2025. Recent change.',
+  csRx:'No state-specific telehealth Sch II prohibition found.',csConf:'Likely',csSrc:'Limited specific sources; new FPA status',
+  csNote:'Newly FPA state. Likely permissive but rules may still be evolving.',
+  inPerson:'No specific requirement found.',inPersonConf:'Likely',
+  teleRules:'Telehealth broadly authorized.',
+  supervision:'None (FPA as of 2025)',malpractice:'Moderate ($4,000-$8,000)',malpMD:'$4,000-$8,000',malpNP:'$2,000-$3,500',
+  malpConf:'Likely',malpSrc:'Industry data',
+  tort:'Some tort reform measures.',
+  parity:'Telehealth parity.',reimb:'Moderate-good commercial rates.',
+  corp:'Standard.',corpNote:'Standard.',
+  color:'green',score:69,
+  bullets:['Grace MD\'s recommended state','NEW FPA state as of 2025','No apparent Sch II telehealth barrier','Moderate malpractice costs','Good-sized market (10th largest state)','Rules may still be evolving post-FPA transition'],
+  flags:{cs:'✅ Likely permitted',inPerson:'✅ None found',supervision:'✅ None (new FPA)',reimb:'Moderate-good',litigation:'✅ Moderate',corp:'✅ Standard'},grace:true
+},
+SC:{
+  name:'South Carolina',scope:'Full Practice Authority (as of 2025)',scopeConf:'Confirmed',scopeSrc:'HJN Blog May 2025 — SC joined FPA in 2025',
+  scopeNote:'South Carolina granted FPA in 2025. Recent change.',
+  csRx:'No state-specific prohibition found.',csConf:'Unclear',csSrc:'Limited sources; new FPA status',
+  csNote:'Needs verification. Newly FPA — rules evolving.',
+  inPerson:'No specific requirement found.',inPersonConf:'Unclear',
+  teleRules:'Telehealth authorized.',
+  supervision:'None (FPA as of 2025)',malpractice:'Low-moderate ($3,000-$6,000)',malpMD:'$3,000-$6,000',malpNP:'$1,500-$3,000',
+  malpConf:'Likely',malpSrc:'Industry data; SC tort reform',
+  tort:'$350K cap on non-economic damages per provider. Provider-friendly.',
+  parity:'Telehealth parity.',reimb:'Lower-moderate. Smaller market.',
+  corp:'Standard.',corpNote:'Standard.',
+  color:'yellow',score:56,
+  bullets:['Grace MD\'s recommended state','NEW FPA state as of 2025','Strong tort reform ($350K cap)','Lower reimbursement market','CS telehealth rules need verification','Smaller market size'],
+  flags:{cs:'⚠️ Unclear',inPerson:'⚠️ Unclear',supervision:'✅ None (new FPA)',reimb:'Low-mod',litigation:'✅ Low',corp:'✅ Standard'},grace:true
+},
+KS:{
+  name:'Kansas',scope:'Full Practice Authority',scopeConf:'Confirmed',scopeSrc:'AANP 2025; Barton Associates',
+  scopeNote:'Full practice authority. Independent practice.',
+  csRx:'No state-specific prohibition found.',csConf:'Likely',csSrc:'CCHP; general review',
+  csNote:'Likely workable.',
+  inPerson:'No specific requirement found.',inPersonConf:'Likely',
+  teleRules:'Telehealth authorized.',
+  supervision:'None (FPA)',malpractice:'Very low ($2,500-$5,000). KS has strong tort reform.',malpMD:'$2,500-$5,000',malpNP:'$1,200-$2,500',
+  malpConf:'Likely',malpSrc:'Sermo 2025; industry data',
+  tort:'Strong tort reform. Among lowest malpractice cost states nationally.',
+  parity:'Telehealth parity.',reimb:'Lower. Smaller rural market.',
+  corp:'Standard.',corpNote:'Standard.',
+  color:'yellow',score:54,
+  bullets:['Grace MD\'s recommended state','Full NP practice authority','Very low malpractice costs','Smaller, lower-reimbursement market','Telehealth well-suited for rural access','Limited commercial payer volume'],
+  flags:{cs:'✅ Likely permitted',inPerson:'✅ None found',supervision:'✅ None',reimb:'Low',litigation:'✅ Very low',corp:'✅ Standard'},grace:true
+},
+MS:{
+  name:'Mississippi',scope:'Reduced Practice',scopeConf:'Confirmed',scopeSrc:'AANP 2025; HJN Blog — FPA bill blocked in 2025',
+  scopeNote:'Reduced practice. Collaboration required. FPA legislation was blocked by medical association.',
+  csRx:'No state-specific prohibition found.',csConf:'Unclear',csSrc:'Limited sources',
+  csNote:'Needs verification.',
+  inPerson:'No specific requirement found.',inPersonConf:'Unclear',
+  teleRules:'Telehealth authorized but less developed infrastructure.',
+  supervision:'Collaborative agreement required',malpractice:'Low ($2,500-$5,000). Strong tort reform.',malpMD:'$2,500-$5,000',malpNP:'$1,200-$2,500',
+  malpConf:'Likely',malpSrc:'Industry data',
+  tort:'$500K cap. Provider-friendly.',
+  parity:'Limited telehealth parity.',reimb:'Low. Small market. Medicaid-heavy.',
+  corp:'Standard.',corpNote:'Standard.',
+  color:'yellow',score:40,
+  bullets:['Grace MD\'s recommended state','Collaborative agreement required','Very low malpractice costs','Small market with low reimbursement','Medicaid-heavy population','CS rules need verification'],
+  flags:{cs:'⚠️ Unclear',inPerson:'⚠️ Unclear',supervision:'⚠️ Collab required',reimb:'Low',litigation:'✅ Very low',corp:'✅ Standard'},grace:true
+},
+AR:{
+  name:'Arkansas',scope:'Reduced Practice',scopeConf:'Confirmed',scopeSrc:'AANP 2025; HJN Blog',
+  scopeNote:'Collaborative agreement required.',
+  csRx:'No state-specific prohibition found.',csConf:'Unclear',csSrc:'Limited sources',
+  csNote:'Needs verification.',
+  inPerson:'No specific requirement found.',inPersonConf:'Unclear',
+  teleRules:'Telehealth authorized.',
+  supervision:'Collaborative agreement required',malpractice:'Low ($2,500-$5,000). Tort reform state.',malpMD:'$2,500-$5,000',malpNP:'$1,200-$2,500',
+  malpConf:'Likely',malpSrc:'Industry data',
+  tort:'Tort reform. Provider-friendly.',
+  parity:'Telehealth parity exists.',reimb:'Low. Small market.',
+  corp:'Standard.',corpNote:'Standard.',
+  color:'yellow',score:42,
+  bullets:['Grace MD\'s recommended state','Collaborative agreement required','Low malpractice costs','Small market with low reimbursement','CS rules need further verification','Rural telehealth opportunity'],
+  flags:{cs:'⚠️ Unclear',inPerson:'⚠️ Unclear',supervision:'⚠️ Collab required',reimb:'Low',litigation:'✅ Low',corp:'✅ Standard'},grace:true
+}
+};
+// --- MODULE 4: LICENSING TIMELINE & DEA DATA ---
+const LIC={
+  NY:{fee:'$735',timeline:'4–8 wks',imlc:'Pending',cds:true,cdsFee:'$45',cdsAgency:'NYSDOH',renewal:'Biennial ($600)',speed:'fast',notes:'No in-person interview. Fast for domestic grads.'},
+  NJ:{fee:'$325',timeline:'4–6 wks',imlc:'Yes',cds:true,cdsFee:'$55',cdsAgency:'NJ BON',renewal:'Biennial ($270)',speed:'fast',notes:'IMLC member. FCVS accepted.'},
+  CT:{fee:'$605',timeline:'1–3 mo',imlc:'Issue only',cds:true,cdsFee:'$50',cdsAgency:'DPH',renewal:'Annual ($565)',speed:'medium',notes:'Online-only apps. Cannot serve as IMLC SPL.'},
+  TX:{fee:'$897',timeline:'2–4 mo',imlc:'Yes',cds:true,cdsFee:'$61',cdsAgency:'DPS',renewal:'Biennial ($582)',speed:'medium',notes:'High volume — expect delays. FCVS mandated.'},
+  FL:{fee:'$350',timeline:'2–6 mo',imlc:'Yes',cds:false,cdsFee:'N/A',cdsAgency:'N/A',renewal:'Biennial ($360)',speed:'slow',notes:'No interim licenses. 30-day initial review by law.'},
+  PA:{fee:'$35',timeline:'Not published',imlc:'Issue only',cds:false,cdsFee:'N/A',cdsAgency:'N/A',renewal:'Biennial ($360)',speed:'medium',notes:'Lowest fee in US ($35). Cannot serve as IMLC SPL.'},
+  MA:{fee:'$600',timeline:'8–16 wks',imlc:'Pending',cds:true,cdsFee:'$200',cdsAgency:'DPH',renewal:'Biennial ($400)',speed:'medium',notes:'High CDS fee ($200). IMLC legislation pending.'},
+  MD:{fee:'$790',timeline:'4+ mo',imlc:'Yes',cds:false,cdsFee:'N/A',cdsAgency:'N/A',renewal:'Biennial ($569)',speed:'slow',notes:'Higher fee. Slow processing. FCVS mandated.'},
+  VA:{fee:'$302',timeline:'12–16 wks',imlc:'Yes',cds:false,cdsFee:'N/A',cdsAgency:'N/A',renewal:'Biennial ($437)',speed:'medium',notes:'IMLC member. Moderate timeline.'},
+  IL:{fee:'$300',timeline:'2–3 mo',imlc:'Yes',cds:true,cdsFee:'$50',cdsAgency:'IDFPR',renewal:'Triennial ($400)',speed:'medium',notes:'IMLC member. Separate CDS required.'},
+  CA:{fee:'$783',timeline:'4–6 mo',imlc:'No',cds:true,cdsFee:'$25',cdsAgency:'DOJ',renewal:'Biennial ($783)',speed:'slow',notes:'NOT in IMLC. Apply 6+ months early. Slowest major state.'},
+  TN:{fee:'$325',timeline:'2–3 mo',imlc:'Yes',cds:true,cdsFee:'$70',cdsAgency:'DH',renewal:'Biennial ($315)',speed:'medium',notes:'IMLC member. Moderate processing.'},
+  MI:{fee:'$375',timeline:'1.5–3 mo',imlc:'Yes',cds:true,cdsFee:'$10',cdsAgency:'LARA',renewal:'Triennial ($375)',speed:'fast',notes:'Reciprocity for 10+ yr licensees. Very low CDS fee.'},
+  SC:{fee:'$300',timeline:'2–3 mo',imlc:'Yes',cds:true,cdsFee:'$25',cdsAgency:'DHEC',renewal:'Biennial ($300)',speed:'medium',notes:'IMLC member. Separate CDS through DHEC.'},
+  KS:{fee:'$245',timeline:'1–2 mo',imlc:'Yes',cds:false,cdsFee:'N/A',cdsAgency:'N/A',renewal:'Annual ($245)',speed:'fast',notes:'One of fastest states. No separate CDS.'},
+  MS:{fee:'$400',timeline:'2–4 mo',imlc:'Yes',cds:false,cdsFee:'N/A',cdsAgency:'N/A',renewal:'Biennial ($275)',speed:'medium',notes:'IMLC member. No formal CPOM.'},
+  AR:{fee:'$400',timeline:'2–3 mo',imlc:'Pending',cds:false,cdsFee:'N/A',cdsAgency:'N/A',renewal:'Annual ($300)',speed:'medium',notes:'IMLC legislation passed, implementation pending.'}
+};
+// DEA universal data
+const DEA_INFO={fee:'$888',term:'3 years',processing:'4–6 wks',form:'Form 224',mate:'8-hr MATE Act training required',perState:true,renewal:'$888/3yr',telemed:'DEA extension through 12/31/2026',src:'DEA Diversion Control 2025; AMN Healthcare; MATE Act 2023'};
+
+// RENDER DEEP ANALYTICS — REGULATORY INTELLIGENCE ENGINE
+let deepFilterState=null; // null = all states
+function rDA(){
+  const el=id=>document.getElementById(id);
+  const allStates=Object.keys(REG);
+  const states=deepFilterState?[deepFilterState]:allStates;
+  const sorted=deepFilterState?[deepFilterState]:[...allStates].sort((a,b)=>REG[b].score-REG[a].score);
+  const cc={green:'var(--ac)',yellow:'var(--am)',red:'var(--rd)'};
+  const cb={green:'var(--acd)',yellow:'var(--amd)',red:'var(--rdd)'};
+  const cl={green:'🟢',yellow:'🟡',red:'🔴'};
+
+  // FILTER BAR
+  let h=`<div class="deep-filter"><button class="deep-chip all${!deepFilterState?' active':''}" onclick="deepFilterState=null;rDA()">All States</button>`;
+  allStates.forEach(s=>{
+    const r=REG[s],c=cc[r.color];
+    h+=`<button class="deep-chip${deepFilterState===s?' active':''}" style="${deepFilterState===s?'background:'+c+';color:var(--bg);border-color:'+c:'border-color:'+c+';color:'+c}" onclick="deepFilterState='${s}';rDA()">${s}</button>`;
+  });
+  h+=`</div>`;
+
+  // MODULE 0: FEDERAL BASELINE
+  h+=`<div class="card" style="border-left:3px solid var(--bl)"><div class="ct" style="color:var(--bl)">Federal Baseline — DEA Telemedicine Extension</div><div style="font-size:13px;color:var(--br);line-height:1.7;margin-bottom:12px">${FEDBASE.dea_ext}</div><div style="font-size:12px;color:var(--mt)"><b>Source:</b> ${FEDBASE.dea_src}</div><div style="font-size:12px;color:var(--am);margin-top:6px">⚠️ ${FEDBASE.dea_note}</div><div style="font-size:11px;color:var(--mt);margin-top:8px">Last verified: February 2026</div></div>`;
+
+  // MODULE 4: COLOR-CODED DASHBOARD (shown first for quick scanning)
+  h+=`<div class="card"><div class="ct">Module 4 — State Dashboard</div><p style="font-size:13px;color:var(--mt);margin-bottom:16px">Quick-scan viability for 100% telehealth psychiatry with NP-led prescribing including Schedule II stimulants.</p>`;
+  h+=`<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px">`;
+  sorted.forEach(s=>{
+    const r=REG[s],c=cc[r.color],bg=cb[r.color];
+    h+=`<div style="background:var(--bg4);border:1px solid var(--bd);border-radius:var(--Rs);padding:16px;border-left:3px solid ${c}"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><div><span style="font-size:16px;font-weight:700;color:var(--wh)">${r.name}</span>${r.grace?'<span style="font-size:9px;background:var(--ppd);color:var(--pp);padding:2px 6px;border-radius:3px;margin-left:6px;font-weight:700">GRACE MD</span>':''}<div style="font-size:11px;color:var(--mt);margin-top:2px">${r.scope}</div></div><div style="display:flex;align-items:center;gap:8px"><span style="font-family:var(--disp);font-size:22px;font-weight:700;color:${c}">${r.score}</span><span style="font-size:9px;font-weight:700;padding:3px 8px;border-radius:3px;background:${bg};color:${c};text-transform:uppercase">${r.color}</span></div></div>`;
+    // Flag badges
+    h+=`<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px">`;
+    Object.entries(r.flags).forEach(([k,v])=>{
+      const isGood=v.startsWith('✅'),isBad=v.startsWith('🚫'),isWarn=v.startsWith('⚠️');
+      const fc=isGood?'var(--ac)':isBad?'var(--rd)':'var(--am)';
+      h+=`<span style="font-size:10px;padding:2px 6px;border-radius:3px;background:var(--bg3);border:1px solid var(--bd);color:${fc};font-weight:600">${k}: ${v}</span>`;
+    });
+    h+=`</div>`;
+    // Bullets
+    h+=`<div style="font-size:12px;color:var(--tx);line-height:1.6">`;
+    r.bullets.forEach(b=>{
+      const isRed=b.includes('🚫')||b.includes('DEAL-BREAKER')||b.includes('INCOMPATIBLE');
+      const isWarn=b.includes('⚠️');
+      h+=`<div style="padding:2px 0;${isRed?'color:var(--rd)':isWarn?'color:var(--am)':''}">• ${b}</div>`;
+    });
+    h+=`</div></div>`;
+  });
+  h+=`</div></div>`;
+
+  // MODULE 5: EXPANSION RANKING
+  h+=`<div class="card"><div class="ct">Module 5 — Expansion Ranking & Rollout Recommendation</div>`;
+  h+=`<p style="font-size:13px;color:var(--mt);margin-bottom:6px">Score weights: Legal feasibility (35%), CS flexibility (25%), Operational friction (15%), Reimbursement (15%), Litigation risk (10%). Deal-breakers override.</p>`;
+  h+=`<div style="margin-bottom:20px">`;
+  const topN=sorted.filter(s=>REG[s].color!=='red');
+  const avoid=sorted.filter(s=>REG[s].color==='red');
+  topN.forEach((s,i)=>{
+    const r=REG[s],c=cc[r.color];
+    const w=Math.max((r.score/85*100),10);
+    h+=`<div style="display:grid;grid-template-columns:30px 60px 1fr 50px;gap:8px;align-items:center;padding:8px;border-bottom:1px solid var(--bd)"><span style="font-family:var(--disp);font-size:16px;font-weight:700;color:${i<3?'var(--ac)':c}">#${i+1}</span><span style="font-size:13px;font-weight:700;color:var(--wh)">${s}</span><div class="bar" style="margin:0"><div class="tk" style="height:22px"><div class="fl" style="width:${w.toFixed(0)}%;background:${c}">${r.score} — ${r.name}</div></div></div><span style="font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px;background:${cb[r.color]};color:${c}">${r.color.toUpperCase()}</span></div>`;
+  });
+  h+=`</div>`;
+  // Recommendations — only show full rec panel when not filtered
+  if(!deepFilterState && topN.length>=3){
+    h+=`<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px"><div style="padding:16px;background:var(--acd);border:1px solid var(--ac20);border-radius:var(--Rs)"><div style="font-size:11px;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">✅ Roll Out Next (Top 3)</div><div style="font-size:14px;color:var(--wh);font-weight:600;line-height:2">1. ${REG[topN[0]].name} (${topN[0]}) — Score: ${REG[topN[0]].score}<br>2. ${REG[topN[1]].name} (${topN[1]}) — Score: ${REG[topN[1]].score}<br>3. ${REG[topN[2]].name} (${topN[2]}) — Score: ${REG[topN[2]].score}</div></div>`;
+    h+=`<div style="padding:16px;background:var(--rdd);border:1px solid rgba(255,82,82,.2);border-radius:var(--Rs)"><div style="font-size:11px;font-weight:700;color:var(--rd);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">🚫 Avoid / Defer</div>`;
+    avoid.forEach(s=>{h+=`<div style="font-size:13px;color:var(--wh);font-weight:600;margin-bottom:4px">${REG[s].name} (${s}) — ${(REG[s].csNote||'').substring(0,80)}...</div>`});
+    if(!avoid.length) h+=`<div style="font-size:13px;color:var(--mt)">No states classified as Red/Avoid at this time.</div>`;
+    h+=`</div></div>`;
+  // NY-centered rec
+  h+=`<div style="padding:16px;background:var(--bg4);border:1px solid var(--bd);border-radius:var(--Rs);margin-bottom:16px"><div style="font-size:11px;font-weight:700;color:var(--bl);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">NY-Centered Strategy</div><div style="font-size:13px;color:var(--tx);line-height:1.7">Since the practice is based in NY, the logical expansion corridor is the <b style="color:var(--wh)">Northeast + Mid-Atlantic</b>: MD, MA, CT, VA, and PA share licensing compacts, geographic proximity, and similar payer landscapes. NY itself scores well (82) but has high malpractice costs. <b style="color:var(--ac)">MD (78) is the #1 near-NY pick</b> — FPA, moderate malpractice, good reimbursement, structured tort system. MA (74) is strong after 2-year NP transition. CT (68) works with the psychiatric exception. <b style="color:var(--rd)">Avoid NJ</b> — the in-person requirement for Sch II is a deal-breaker despite geographic proximity. VA (72) is excellent with its strict malpractice caps.</div></div>`;
+  } // end if(!deepFilterState && topN>=3)
+  h+=`</div>`;
+
+  // MODULE 1: LEGAL & OPERATIONAL VIABILITY (detail per state)
+  h+=`<div class="card"><div class="ct">Module 1 — Legal & Operational Viability</div><p style="font-size:13px;color:var(--mt);margin-bottom:16px">Detailed regulatory analysis. Focus: NP scope, CS prescribing, in-person requirements, supervision.</p>`;
+  states.forEach(s=>{
+    const r=REG[s],c=cc[r.color];
+    h+=`<div style="margin-bottom:20px;padding:16px;background:var(--bg4);border:1px solid var(--bd);border-radius:var(--Rs);border-left:3px solid ${c}"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><div style="font-size:16px;font-weight:700;color:var(--wh)">${r.name} (${s})${r.grace?' <span style="color:var(--pp);font-size:11px">Grace MD</span>':''}</div><span style="font-size:9px;font-weight:700;padding:3px 8px;border-radius:3px;background:${cb[r.color]};color:${c}">${r.color.toUpperCase()} · ${r.score}/100</span></div>`;
+    const rows=[
+      ['NP Scope',r.scope,r.scopeConf,''],
+      ['CS Rx',r.csRx.substring(0,150)+(r.csRx.length>150?'...':''),r.csConf,(r.csNote||'').substring(0,120)+((r.csNote||'').length>120?'...':'')],
+      ['In-Person',r.inPerson,r.inPersonConf,''],
+      ['Supervision',r.supervision,'',''],
+      ['Telehealth',r.teleRules||'','',''],
+      ['Corp Practice',r.corp||'','',(r.corpNote||'').substring(0,80)]
+    ];
+    h+=`<table style="width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed">`;
+    h+=`<colgroup><col style="width:100px"><col></colgroup>`;
+    rows.forEach(([label,val,conf,note])=>{
+      const confC=conf==='Confirmed'?'var(--ac)':conf==='Likely'?'var(--am)':conf==='Unclear'?'var(--rd)':'var(--mt)';
+      h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:6px 8px;color:var(--mt);font-weight:700;vertical-align:top;font-size:11px">${label}</td><td style="padding:6px 8px;color:var(--br);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word">${val}${conf?` <span style="color:${confC};font-weight:700;font-size:10px">[${conf}]</span>`:''}${note?`<div style="color:var(--mt);font-size:11px;margin-top:3px">${note}</div>`:''}</td></tr>`;
+    });
+    // Sources
+    h+=`<tr><td style="padding:6px 8px;color:var(--mt);font-weight:700;vertical-align:top;font-size:11px">Sources</td><td style="padding:6px 8px;font-size:10px;color:var(--mt);overflow-wrap:break-word;word-break:break-word">${(r.scopeSrc||'').substring(0,120)}${r.csSrc?'; '+r.csSrc.substring(0,80):''}</td></tr>`;
+    h+=`</table></div>`;
+  });
+  h+=`</div>`;
+
+  // TX DEEP DIVE (show when All or TX selected)
+  if(!deepFilterState || deepFilterState==='TX'){
+  h+=`<div class="card" style="border:1px solid var(--am)"><div class="ct" style="color:var(--am)">Texas Deep Dive — Priority Market Analysis</div>`;
+  h+=`<div style="font-size:13px;color:var(--tx);line-height:1.8;margin-bottom:16px">`;
+  h+=`<p style="margin-bottom:12px"><b style="color:var(--wh);font-size:15px">Can we operate 100% telehealth in TX?</b></p>`;
+  h+=`<p style="color:var(--am);font-weight:700;margin-bottom:12px">ANSWER: Partially yes, with a critical limitation on Schedule II prescribing by NPs.</p>`;
+  h+=`<div style="padding:12px;background:var(--bg3);border-radius:var(--Rs);margin-bottom:12px;border-left:2px solid var(--am)"><b style="color:var(--am)">The Core Problem:</b> Texas NPs <b>cannot prescribe Schedule II</b> controlled substances under any circumstances. This means Adderall, Ritalin, Vyvanse, Concerta, and other ADHD stimulants must be prescribed by the supervising MD — not the NP managing the patient. This fundamentally breaks the NP-led scalability model for ADHD care.</div>`;
+  h+=`<div style="padding:12px;background:var(--bg3);border-radius:var(--Rs);margin-bottom:12px;border-left:2px solid var(--ac)"><b style="color:var(--ac)">What IS permitted for NPs in TX (via telehealth):</b><br>• Schedule III-V prescribing under delegation agreement<br>• Anxiety medications (buspirone, hydroxyzine — not controlled)<br>• Some benzodiazepines (Sch IV) under delegation<br>• SSRIs, SNRIs, atypical antipsychotics (non-controlled)<br>• Gabapentin (recently rescheduled in some states, check TX)<br>• All non-controlled psychiatric medications</div>`;
+  h+=`<div style="padding:12px;background:var(--bg3);border-radius:var(--Rs);margin-bottom:12px;border-left:2px solid var(--bl)"><b style="color:var(--bl)">Operational Workarounds:</b><br>• <b>MD prescriber model for ADHD:</b> The supervising MD handles all Sch II prescribing directly (telehealth visit). NPs handle follow-ups, non-stimulant adjustments, and monitoring.<br>• <b>Non-stimulant ADHD alternatives:</b> Strattera (atomoxetine), Wellbutrin (bupropion), guanfacine, clonidine — all non-controlled or Sch IV, prescribable by NPs.<br>• <b>Split model:</b> NPs manage the majority of the caseload (depression, anxiety, bipolar, insomnia) while MDs handle stimulant-requiring ADHD patients.<br>• <b>Ratio management:</b> Max 7 NPs per MD (except underserved areas/hospitals). Plan staffing accordingly.</div>`;
+  h+=`<div style="padding:12px;background:var(--bg3);border-radius:var(--Rs);margin-bottom:12px;border-left:2px solid var(--pp)"><b style="color:var(--pp)">TX Compliance Requirements:</b><br>• Written prescriptive authority agreement between NP and MD<br>• MD within 75 miles (can be virtual presence under current interpretations)<br>• 10% chart review by supervising MD<br>• Monthly documented meetings between NP and MD<br>• E-prescribing mandatory for all CS since Jan 2021<br>• PDMP check required before prescribing opioids, benzos, barbiturates, carisoprodol<br>• Audio-video telehealth required; audio-only if A/V not feasible<br>• Patient must be located in Texas during visit<br>• TX medical license required for all providers</div>`;
+  h+=`<div style="padding:12px;background:var(--bg3);border-radius:var(--Rs);border-left:2px solid var(--wh)"><b style="color:var(--wh)">State vs Federal vs Payer:</b><br>• <b>State law:</b> NPs restricted from Sch II. MDs permitted via telehealth. No state in-person requirement beyond federal.<br>• <b>Federal (DEA):</b> Extension through 12/31/2026 allows Sch II-V via telehealth without in-person. Benefits MDs prescribing stimulants.<br>• <b>Payer:</b> TX commercial insurers required to cover telehealth. Medicaid covers broadly. Individual payer CS policies may vary — verify with Aetna/BCBS/Cigna/Optum before credentialing.</div>`;
+  h+=`</div></div>`;
+  } // end TX deep dive filter
+
+  // PA vs NP COMPARISON — NY & TX (show when All, NY, or TX selected)
+  if(!deepFilterState || deepFilterState==='NY' || deepFilterState==='TX'){
+  h+=`<div class="card" style="border:1px solid var(--pp)"><div class="ct" style="color:var(--pp)">PA vs NP Analysis — New York & Texas</div>`;
+  h+=`<p style="font-size:13px;color:var(--mt);margin-bottom:16px">Side-by-side comparison of Physician Assistant vs Nurse Practitioner for 100% telehealth psychiatry. Research focus: Schedule II prescribing, supervision, scalability, malpractice.</p>`;
+  ['NY','TX'].forEach(s=>{
+    const r=REG[s],pa=r.pa;
+    if(!pa)return;
+    const isNY=s==='NY';
+    h+=`<div style="margin-bottom:20px;padding:16px;background:var(--bg3);border-radius:var(--Rs);border-left:3px solid var(--pp)">`;
+    h+=`<div style="font-size:16px;font-weight:700;color:var(--wh);margin-bottom:12px">${r.name} — PA Deep Dive</div>`;
+    h+=`<table style="width:100%;border-collapse:collapse;font-size:12px;margin-bottom:16px">`;
+    h+=`<thead><tr><th style="padding:8px;text-align:left;color:var(--mt);border-bottom:2px solid var(--bd);width:20%">Factor</th><th style="padding:8px;text-align:left;color:var(--bl);border-bottom:2px solid var(--bd);width:40%">NP</th><th style="padding:8px;text-align:left;color:var(--pp);border-bottom:2px solid var(--bd);width:40%">PA</th></tr></thead><tbody>`;
+    h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700">Scope</td><td style="padding:8px;color:var(--br)">${r.scope}</td><td style="padding:8px;color:var(--br)">${pa.scope}</td></tr>`;
+    const npCS2=isNY?'✅ Sch II-V (FPA)':'🚫 No Sch II (III-V only)';
+    const paCS2=pa.csRx.includes('CAN prescribe')?'✅ Sch II-V (delegated)':'🚫 No Sch II outpatient';
+    h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700">Sch II Rx</td><td style="padding:8px;color:${isNY?'var(--ac)':'var(--rd)'}"><b>${npCS2}</b></td><td style="padding:8px;color:${pa.csRx.includes('CAN prescribe')?'var(--ac)':'var(--rd)'}"><b>${paCS2}</b></td></tr>`;
+    const npRatio2=isNY?'No limit (FPA)':'Max 7 combined per MD';
+    h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700">Ratio</td><td style="padding:8px;color:var(--br)">${npRatio2}</td><td style="padding:8px;color:var(--br)">${pa.ratio.substring(0,80)}</td></tr>`;
+    h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700">Supervision</td><td style="padding:8px;color:var(--br)">${r.supervision}</td><td style="padding:8px;color:var(--br)">${pa.supervision.substring(0,120)}...</td></tr>`;
+    h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700">Salary</td><td style="padding:8px;color:var(--br)">${isNY?'$130K-$170K':'$120K-$160K'}</td><td style="padding:8px;color:var(--br)">${pa.salary.split('.')[0]}</td></tr>`;
+    h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700">Malpractice</td><td style="padding:8px;color:var(--br)">${r.malpNP||'—'}/yr</td><td style="padding:8px;color:var(--br)">${pa.malpractice}</td></tr>`;
+    h+=`<tr><td style="padding:8px;color:var(--mt);font-weight:700">Sources</td><td colspan="2" style="padding:8px;font-size:11px;color:var(--mt)">${pa.scopeSrc}; ${pa.csSrc}; ${pa.ratioSrc}</td></tr>`;
+    h+=`</tbody></table>`;
+    h+=`<div style="padding:12px;background:var(--bg4);border-radius:var(--Rs);border-left:2px solid var(--pp)"><b style="color:var(--pp);font-size:12px">VERDICT:</b><div style="font-size:12px;color:var(--br);margin-top:6px;line-height:1.7">${pa.verdict}</div></div></div>`;
+  });
+  h+=`<div style="padding:14px;background:var(--bg4);border:1px solid var(--pp);border-radius:var(--Rs);margin-top:12px"><div style="font-size:13px;font-weight:700;color:var(--pp);margin-bottom:8px">PA vs NP — Bottom Line</div><div style="font-size:13px;color:var(--tx);line-height:1.8"><b style="color:var(--wh)">New York:</b> NPs are the clear winner for telehealth scalability. FPA means no supervision overhead, no ratio limits. PAs can prescribe Sch II but require supervision (1:6 ratio cap). For 100% telehealth, NP independence eliminates bottlenecks.<br><br><b style="color:var(--wh)">Texas:</b> PAs offer <b style="color:var(--rd)">NO advantage</b> over NPs. Both face the identical Sch II prohibition, same prescriptive authority agreement, same 1:7 combined ratio. The only solution for stimulant prescribing in TX is an MD — regardless of whether support staff is PAs or NPs.<br><br><b style="color:var(--ac)">Recommendation:</b> Prioritize NP hiring for both states. In NY, NPs provide maximum independence. In TX, NPs and PAs are functionally equivalent — but larger NP talent pool gives NPs a practical hiring edge.</div></div></div>`;
+  } // end PA vs NP filter
+
+  // MODULE 2: REIMBURSEMENT
+  h+=`<div class="card"><div class="ct">Module 2 — Reimbursement & Financial Attractiveness</div>`;
+  h+=`<div class="scroll-wrap"><table class="bd-table" style="min-width:600px"><thead><tr><th>State</th><th>Parity</th><th>Reimb Level</th><th>Market</th><th>Rating</th></tr></thead><tbody>`;
+  sorted.forEach(s=>{
+    const r=REG[s],rl=r.reimb||'';
+    const isH=rl.includes('Strong')||rl.includes('Good-to-strong');
+    const isM=rl.includes('Good')||rl.includes('Moderate-good')||rl.includes('Moderate-to-good');
+    const isL=rl.includes('Low')||rl.includes('Moderate.');
+    const ac=isH?'var(--ac)':isM?'var(--bl)':'var(--am)';
+    const pop={'NY':'20M','NJ':'9.3M','CT':'3.6M','TX':'30M','FL':'22M','PA':'13M','MA':'7M','MD':'6.2M','VA':'8.6M','IL':'12.7M','CA':'39M','TN':'7M','MI':'10M','SC':'5.2M','KS':'2.9M','MS':'3M','AR':'3M'};
+    h+=`<tr><td style="color:var(--wh);font-weight:600">${s} <span style="color:var(--mt);font-weight:400">${r.name}</span></td><td style="color:var(--ac)">✓</td><td style="color:${ac}">${rl.split('.')[0]}</td><td style="color:var(--mt)">${pop[s]||'—'}</td><td style="color:${ac};font-weight:600">${isH?'⭐⭐⭐':isM?'⭐⭐':'⭐'}</td></tr>`;
+  });
+  h+=`</tbody></table></div></div>`;
+
+  // MODULE 3: MALPRACTICE & LITIGATION
+  h+=`<div class="card"><div class="ct">Module 3 — Malpractice & Litigation Risk</div>`;
+  h+=`<div class="scroll-wrap"><table class="bd-table" style="min-width:700px"><thead><tr><th>State</th><th>Psych MD<br>Premium</th><th>Psych NP<br>Premium</th><th>Tort Climate</th><th>Caps</th><th>Risk</th></tr></thead><tbody>`;
+  sorted.forEach(s=>{
+    const r=REG[s],mp=r.malpractice||'',tort=r.tort||'';
+    const hasCap=tort.includes('cap')||tort.includes('Cap')||tort.includes('MICRA');
+    const isLow=mp.includes('Low')||mp.includes('Very low')||mp.includes('$2,500')||mp.includes('$3,000');
+    const isMod=mp.includes('Moderate')&&!mp.includes('Very high')&&!mp.includes('High');
+    const isHigh=mp.includes('High')||mp.includes('Very high');
+    const rc=isLow?'var(--ac)':isMod?'var(--am)':'var(--rd)';
+    h+=`<tr><td style="color:var(--wh);font-weight:600">${s}</td><td style="color:${rc};font-weight:600">${r.malpMD||'—'}<span style="color:var(--mt);font-weight:400;font-size:10px">/yr</span></td><td style="color:var(--ac);font-weight:600">${r.malpNP||'—'}<span style="color:var(--mt);font-weight:400;font-size:10px">/yr</span></td><td class="wrap">${tort.substring(0,60)}${tort.length>60?'...':''}</td><td style="color:${hasCap?'var(--ac)':'var(--rd)'}"><b>${hasCap?'Yes':'No caps'}</b></td><td style="color:${rc};font-weight:700">${isLow?'✅ Low':isMod?'⚠ Moderate':'🚫 High'}</td></tr>`;
+  });
+  h+=`</tbody></table></div><div style="font-size:11px;color:var(--mt);margin-top:8px">NP premiums are estimates based on industry data (CarePro Insurance 2025, Griffith & Harris). PA premiums are generally comparable to NP rates. Actual premiums vary by carrier, coverage limits, and claims history.</div></div>`;
+
+  // PLLC Structure Note
+  // MODULE 5 — LICENSING TIMELINE & COSTS
+  h+=`<div class="card"><div class="ct">Module 5 — Licensing Timeline & Costs</div><p style="font-size:13px;color:var(--mt);margin-bottom:16px">Estimated processing times, application fees, and state CDS requirements. Sources: AffordableCredService 2025; MedLicense.com; FSMB; state medical boards.</p>`;
+  h+=`<div class="scroll-wrap"><table class="bd-table" style="min-width:800px"><thead><tr><th>State</th><th>App Fee</th><th>Timeline</th><th>IMLC</th><th>State CDS</th><th>CDS Fee</th><th>Renewal</th><th>Speed</th></tr></thead><tbody>`;
+  states.forEach(s=>{
+    const l=typeof LIC!=='undefined'?LIC[s]:null;
+    if(!l)return;
+    const speedC=l.speed==='fast'?'var(--ac)':l.speed==='medium'?'var(--am)':'var(--rd)';
+    const speedL=l.speed==='fast'?'⚡ Fast':l.speed==='medium'?'⏱ Medium':'🐢 Slow';
+    const imlcC=l.imlc==='Yes'?'var(--ac)':l.imlc==='No'?'var(--rd)':'var(--am)';
+    h+=`<tr><td>${s}</td><td style="font-weight:700;color:var(--wh)">${l.fee}</td><td>${l.timeline}</td><td style="color:${imlcC}">${l.imlc}</td><td>${l.cds?'✅ Yes ('+l.cdsAgency+')':'—'}</td><td>${l.cdsFee}</td><td style="font-size:11px">${l.renewal}</td><td style="color:${speedC};font-weight:700">${speedL}</td></tr>`;
+  });
+  h+=`</tbody></table></div>`;
+  // Cost summary
+  const allFees=states.map(s=>typeof LIC!=='undefined'&&LIC[s]?parseInt(LIC[s].fee.replace(/[^0-9]/g,'')):0).filter(v=>v>0);
+  const totalLicFees=allFees.reduce((a,b)=>a+b,0);
+  const cdsFees=states.map(s=>typeof LIC!=='undefined'&&LIC[s]&&LIC[s].cds?parseInt(LIC[s].cdsFee.replace(/[^0-9]/g,'')):0).filter(v=>v>0);
+  const totalCds=cdsFees.reduce((a,b)=>a+b,0);
+  const totalDEA=states.length*888;
+  h+=`<div style="margin-top:12px;padding:12px;background:var(--bg4);border-radius:var(--Rs);border-left:3px solid var(--ac)"><div style="font-size:12px;font-weight:700;color:var(--ac);margin-bottom:6px">Total Licensing Cost Estimate — All ${states.length} States</div><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;font-size:13px;color:var(--tx)"><div><span style="color:var(--mt)">State Med License Fees:</span><br><b style="color:var(--wh);font-size:16px">$${totalLicFees.toLocaleString()}</b></div><div><span style="color:var(--mt)">State CDS Fees:</span><br><b style="color:var(--wh);font-size:16px">$${totalCds.toLocaleString()}</b></div><div><span style="color:var(--mt)">DEA Registrations (${states.length}×$888):</span><br><b style="color:var(--wh);font-size:16px">$${totalDEA.toLocaleString()}</b></div><div><span style="color:var(--mt)">Grand Total (est):</span><br><b style="color:var(--ac);font-size:18px">$${(totalLicFees+totalCds+totalDEA).toLocaleString()}</b></div></div><div style="font-size:11px;color:var(--mt);margin-top:8px">Per-provider cost. Does not include FCVS ($395), MATE training, or credentialing service fees.</div></div></div>`;
+
+  // MODULE 6 — DEA REGISTRATION
+  h+=`<div class="card"><div class="ct">Module 6 — DEA Registration Requirements</div><p style="font-size:13px;color:var(--mt);margin-bottom:16px">Federal controlled substance prescribing authority. Source: DEA Diversion Control Division 2025; MATE Act (2023).</p>`;
+  h+=`<table style="width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed"><colgroup><col style="width:160px"><col></colgroup>`;
+  const deaRows=[
+    ['Application Fee','$888 per 3-year term (Form 224)'],
+    ['Processing Time','4–6 weeks after submission'],
+    ['Per-State Requirement','YES — separate DEA registration required in each state where provider prescribes controlled substances'],
+    ['MATE Act Training','8-hour training on opioid/SUD management required for all new registrants and renewals (enacted 2023)'],
+    ['Telehealth Extension','DEA telemedicine flexibilities extended through 12/31/2026 — allows prescribing CS via telehealth without initial in-person evaluation. Monitor for permanent rules expected mid-2026.'],
+    ['Address Requirement','Must use physical practice address (not PO Box). For telehealth practices, the PLLC registered office address.'],
+    ['NP/PA Registration','Mid-level practitioners (NPs, PAs) must obtain their own DEA registration (prefix "M") — requires active state license + state CS authority first'],
+    ['Renewal','$888 every 3 years. Electronic renewal via DEA portal. Failure to renew = immediate loss of CS prescribing authority.'],
+    ['Multi-State Cost',deepFilterState?'Each provider needs a DEA for this state ($888/3yr). With multi-state expansion, costs multiply.':'${allStates.length} states × $888 = $${(allStates.length*888).toLocaleString()} per provider per 3-year term']
+  ];
+  deaRows.forEach(([label,val])=>{
+    h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700;vertical-align:top;font-size:12px">${label}</td><td style="padding:8px;color:var(--br);overflow-wrap:break-word;word-break:break-word">${val}</td></tr>`;
+  });
+  h+=`</table>`;
+  // DEA cost calculator note
+  h+=`<div style="margin-top:12px;padding:10px;background:var(--amd);border-radius:var(--Rs)"><div style="font-size:12px;color:var(--am);font-weight:700;margin-bottom:4px">⚠️ DEA Cost Alert for Multi-State Telehealth</div><div style="font-size:12px;color:var(--tx);line-height:1.6">Each provider needs a separate DEA in each state they prescribe CS. With ${states.length} states, each provider costs <b style="color:var(--wh)">$${(states.length*888).toLocaleString()}</b> in DEA fees per 3-year term. A 10-provider practice across all ${states.length} states = <b style="color:var(--rd)">$${(10*states.length*888).toLocaleString()}</b> in DEA fees alone. Budget accordingly. Some states also require separate state CDS registration before DEA can be issued.</div></div></div>`;
+
+  // MODULE 7: PER-STATE COST ANALYSIS (MD vs NP)
+  h+=`<div class="card"><div class="ct">Module 7 — Per-State Cost Analysis (MD vs NP)</div><p style="font-size:13px;color:var(--mt);margin-bottom:12px">Initial entry cost + annualized recurring cost per provider per state. Multi-year fees (DEA 3yr, biennial renewals) are annualized. Malpractice uses midpoint of range.</p>`;
+  h+=`<div class="scroll-wrap"><table class="bd-table" style="min-width:1100px"><thead><tr><th style="width:50px">State</th><th colspan="2" style="text-align:center;color:var(--bl);border-bottom:2px solid var(--bl)">MD — Initial Entry</th><th colspan="2" style="text-align:center;color:var(--pp);border-bottom:2px solid var(--pp)">NP — Initial Entry</th><th colspan="2" style="text-align:center;color:var(--bl);border-bottom:2px solid var(--bl)">MD — Annual Recurring</th><th colspan="2" style="text-align:center;color:var(--pp);border-bottom:2px solid var(--pp)">NP — Annual Recurring</th></tr><tr><th></th><th style="color:var(--bl)">Cost</th><th style="color:var(--bl);font-size:10px">Breakdown</th><th style="color:var(--pp)">Cost</th><th style="color:var(--pp);font-size:10px">Breakdown</th><th style="color:var(--bl)">Cost</th><th style="color:var(--bl);font-size:10px">Breakdown</th><th style="color:var(--pp)">Cost</th><th style="color:var(--pp);font-size:10px">Breakdown</th></tr></thead><tbody>`;
+  let grandInitMD=0,grandInitNP=0,grandAnnMD=0,grandAnnNP=0;
+  states.forEach(s=>{
+    const r=REG[s],l=typeof LIC!=='undefined'&&LIC[s]?LIC[s]:null;
+    if(!l)return;
+    // Parse fees
+    const licFee=parseInt(l.fee.replace(/[^0-9]/g,''))||0;
+    const cdsFee=l.cds?parseInt(l.cdsFee.replace(/[^0-9]/g,''))||0:0;
+    const deaFee=888;
+    const setupFee=5700;
+    // Parse renewal — extract number and period
+    const renMatch=l.renewal.match(/\$([0-9,]+)/);
+    const renFee=renMatch?parseInt(renMatch[1].replace(/,/g,''))||0:0;
+    const isBiennial=l.renewal.toLowerCase().includes('biennial');
+    const isTriennial=l.renewal.toLowerCase().includes('triennial');
+    const annRenewal=isTriennial?Math.round(renFee/3):isBiennial?Math.round(renFee/2):renFee;
+    const annDEA=Math.round(deaFee/3);
+    const annCDS=l.cds?(isTriennial?Math.round(cdsFee/3):isBiennial?Math.round(cdsFee/2):cdsFee):0;
+    // Malpractice — parse midpoint
+    const mdMalp=r.malpMD||'$5,000-$8,000';
+    const npMalp=r.malpNP||'$2,500-$4,000';
+    const parseMalp=str=>{const nums=str.match(/[\d,]+/g);if(!nums||nums.length<2)return 5000;const lo=parseInt(nums[0].replace(/,/g,'')),hi=parseInt(nums[1].replace(/,/g,''));return Math.round((lo+hi)/2)};
+    const mdMalpAnn=parseMalp(mdMalp);
+    const npMalpAnn=parseMalp(npMalp);
+    // Initial entry
+    const initMD=licFee+cdsFee+deaFee+setupFee+mdMalpAnn;
+    const initNP=licFee+cdsFee+deaFee+setupFee+npMalpAnn;
+    // Annual recurring
+    const annMD=annRenewal+annDEA+annCDS+mdMalpAnn;
+    const annNP=annRenewal+annDEA+annCDS+npMalpAnn;
+    grandInitMD+=initMD;grandInitNP+=initNP;grandAnnMD+=annMD;grandAnnNP+=annNP;
+    h+=`<tr><td style="color:var(--wh);font-weight:700">${s}</td>`;
+    h+=`<td style="color:var(--bl);font-weight:700;font-size:14px">$${initMD.toLocaleString()}</td>`;
+    h+=`<td style="font-size:10px;color:var(--mt)">Lic ${l.fee} · ${l.cds?'CDS $'+cdsFee+' · ':''}DEA $888 · Setup $5,700 · Malp $${mdMalpAnn.toLocaleString()}</td>`;
+    h+=`<td style="color:var(--pp);font-weight:700;font-size:14px">$${initNP.toLocaleString()}</td>`;
+    h+=`<td style="font-size:10px;color:var(--mt)">Lic ${l.fee} · ${l.cds?'CDS $'+cdsFee+' · ':''}DEA $888 · Setup $5,700 · Malp $${npMalpAnn.toLocaleString()}</td>`;
+    h+=`<td style="color:var(--bl);font-weight:700">$${annMD.toLocaleString()}</td>`;
+    h+=`<td style="font-size:10px;color:var(--mt)">Renew $${annRenewal}/yr · DEA $${annDEA}/yr${annCDS?' · CDS $'+annCDS+'/yr':''} · Malp $${mdMalpAnn.toLocaleString()}/yr</td>`;
+    h+=`<td style="color:var(--pp);font-weight:700">$${annNP.toLocaleString()}</td>`;
+    h+=`<td style="font-size:10px;color:var(--mt)">Renew $${annRenewal}/yr · DEA $${annDEA}/yr${annCDS?' · CDS $'+annCDS+'/yr':''} · Malp $${npMalpAnn.toLocaleString()}/yr</td>`;
+    h+=`</tr>`;
+  });
+  if(states.length>1){
+    h+=`<tr style="border-top:2px solid var(--ac)"><td style="color:var(--ac);font-weight:700">ALL</td>`;
+    h+=`<td style="color:var(--bl);font-weight:700;font-size:14px">$${grandInitMD.toLocaleString()}</td><td></td>`;
+    h+=`<td style="color:var(--pp);font-weight:700;font-size:14px">$${grandInitNP.toLocaleString()}</td><td></td>`;
+    h+=`<td style="color:var(--bl);font-weight:700">$${grandAnnMD.toLocaleString()}/yr</td><td></td>`;
+    h+=`<td style="color:var(--pp);font-weight:700">$${grandAnnNP.toLocaleString()}/yr</td><td></td></tr>`;
+  }
+  h+=`</tbody></table></div>`;
+  // Summary cards
+  const avgInitMD=states.length?Math.round(grandInitMD/states.length):0;
+  const avgInitNP=states.length?Math.round(grandInitNP/states.length):0;
+  const avgAnnMD=states.length?Math.round(grandAnnMD/states.length):0;
+  const avgAnnNP=states.length?Math.round(grandAnnNP/states.length):0;
+  const savings=grandAnnMD-grandAnnNP;
+  h+=`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px">`;
+  h+=`<div style="padding:14px;background:var(--bg3);border-radius:var(--Rs);border-left:3px solid var(--bl)"><div style="font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:1px">Avg Initial / MD</div><div style="font-family:var(--disp);font-size:22px;font-weight:700;color:var(--bl);margin-top:4px">$${avgInitMD.toLocaleString()}</div></div>`;
+  h+=`<div style="padding:14px;background:var(--bg3);border-radius:var(--Rs);border-left:3px solid var(--pp)"><div style="font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:1px">Avg Initial / NP</div><div style="font-family:var(--disp);font-size:22px;font-weight:700;color:var(--pp);margin-top:4px">$${avgInitNP.toLocaleString()}</div></div>`;
+  h+=`<div style="padding:14px;background:var(--bg3);border-radius:var(--Rs);border-left:3px solid var(--bl)"><div style="font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:1px">Avg Annual / MD</div><div style="font-family:var(--disp);font-size:22px;font-weight:700;color:var(--bl);margin-top:4px">$${avgAnnMD.toLocaleString()}/yr</div></div>`;
+  h+=`<div style="padding:14px;background:var(--bg3);border-radius:var(--Rs);border-left:3px solid var(--pp)"><div style="font-size:10px;color:var(--mt);text-transform:uppercase;letter-spacing:1px">Avg Annual / NP</div><div style="font-family:var(--disp);font-size:22px;font-weight:700;color:var(--pp);margin-top:4px">$${avgAnnNP.toLocaleString()}/yr</div></div>`;
+  h+=`</div>`;
+  if(savings>0){
+    h+=`<div style="margin-top:12px;padding:10px;background:var(--acd);border-radius:var(--Rs);border-left:3px solid var(--ac)"><div style="font-size:12px;color:var(--ac);font-weight:700">💰 NP Cost Advantage: $${savings.toLocaleString()}/yr across ${states.length} states</div><div style="font-size:11px;color:var(--tx);margin-top:4px">Annual savings from lower NP malpractice premiums. Per-provider, all other licensing and DEA costs are identical.</div></div>`;
+  }
+  h+=`</div>`;
+
+  h+=`<div style="padding:12px;background:var(--bg4);border:1px solid var(--bd);border-radius:var(--Rs);margin-top:12px;border-left:3px solid var(--bl)"><div style="font-size:12px;font-weight:700;color:var(--bl);margin-bottom:6px">PLLC Structure Note</div><div style="font-size:12px;color:var(--tx);line-height:1.7">Joseph Psychiatry PLLC is structured as a Professional Limited Liability Company — the <b style="color:var(--ac)">preferred and compliant entity type</b> in Corporate Practice of Medicine (CPOM) states. PLLCs and PCs are explicitly permitted to deliver medical services in all 17 evaluated states. <b style="color:var(--am)">Important:</b> Some states (NY, CA, TX, IL) require a state-specific PLLC or PC — the NY PLLC may need to register as a foreign professional entity or form a separate in-state PLLC per expansion state. FL permits PLLCs for professional services. States without formal CPOM (MS, AR) are more permissive. Consult healthcare counsel for state-specific entity formation.</div></div>`;
+  // Disclaimer
+  h+=`<div style="padding:12px;background:var(--bg4);border:1px solid var(--bd);border-radius:var(--Rs);margin-top:12px"><div style="font-size:11px;color:var(--mt);line-height:1.6"><b>Disclaimer:</b> This regulatory analysis is compiled from publicly available sources as of February 2026. Laws change frequently. Confirmation levels are marked per finding: <span style="color:var(--ac)">Confirmed</span> = authoritative source with direct citation, <span style="color:var(--am)">Likely</span> = credible but not definitively verified, <span style="color:var(--rd)">Unclear</span> = conflicting or insufficient sources. <b>This is not legal advice.</b> Consult healthcare regulatory counsel before making expansion decisions. DEA extension expires 12/31/2026 — monitor for changes.</div></div>`;
+
+  const filterLabel=deepFilterState?REG[deepFilterState].name+' ('+deepFilterState+')':'All '+allStates.length+' States';
+  document.getElementById('sec-deep').innerHTML=`<div class="tl">Expansion Intelligence</div><h2 class="tl2">State Expansion Engine</h2><p class="ts">Decision-grade regulatory analysis for 100% telehealth psychiatry. Showing: <b style="color:var(--ac)">${filterLabel}</b>. Feb 2026.</p>`+h;
+}
+// 5-YEAR with billing fee + setup costs
+function initGr(){stOpts('grSt','NY');document.getElementById('grSt').addEventListener('change',()=>{document.getElementById('grSal').value=DEF_SAL[document.getElementById('grSt').value]||165000;rGr()});rGr()}
+function rGr(){const st=document.getElementById('grSt').value,start=+document.getElementById('grStart').value,hire=+document.getElementById('grHire').value,pats=+document.getElementById('grPats').value,baseSal=+document.getElementById('grSal').value,infl=+document.getElementById('grInfl').value,oh=+document.getElementById('grOh').value,billPct=+document.getElementById('grBill').value;document.getElementById('grStartV').textContent=start;document.getElementById('grHireV').textContent=hire;document.getElementById('grPatsV').textContent=pats;document.getElementById('grSalV').textContent=$f(baseSal);document.getElementById('grInflV').textContent=infl+'%';document.getElementById('grOhV').textContent=$f(oh);document.getElementById('grBillV').textContent=billPct+'%';
+  const rpp=blended(st,['Aetna','BCBS'],5);const years=[];let tNP=start,prevNP=0;
+  for(let y=1;y<=5;y++){const newHires=y===1?start:hire*4;if(y>1)tNP+=hire*4;const sal=Math.round(baseSal*Math.pow(1+infl/100,y-1));const rev=rpp*pats*12*tNP,bf=rev*(billPct/100),setup=newHires*SETUP_COST,cost=sal*tNP+oh*12*tNP+bf,costY=cost+setup,profit=rev-costY,margin=rev>0?(profit/rev*100):0,ppnp=tNP>0?profit/tNP:0;years.push({y,np:tNP,newHires,sal,rev,bf,setup,cost:costY,opCost:cost,profit,margin,ppnp})}
+  const mxR=Math.max(...years.map(y=>y.rev));const t5R=years.reduce((a,y)=>a+y.rev,0),t5C=years.reduce((a,y)=>a+y.cost,0),t5P=t5R-t5C,t5B=years.reduce((a,y)=>a+y.bf,0),t5S=years.reduce((a,y)=>a+y.setup,0);
+  document.getElementById('grResults').innerHTML=`<div class="card" style="border-color:var(--ac20)"><div class="ct">5-Year Forecast — ${SN[st]}</div><div class="res-grid"><div class="res-card neutral"><div class="rc-label">Y1 Providers</div><div class="rc-val">${years[0].np}</div></div><div class="res-card staff"><div class="rc-label">Y5 Providers</div><div class="rc-val">${years[4].np}</div></div><div class="res-card revenue"><div class="rc-label">Y5 Revenue</div><div class="rc-val">${$k(years[4].rev)}</div></div><div class="res-card ${years[4].profit>=0?'profit':'loss'}"><div class="rc-label">Y5 Profit</div><div class="rc-val">${$k(years[4].profit)}</div><div class="rc-sub"><span class="${mc(years[4].margin)}">${years[4].margin.toFixed(1)}%</span></div></div></div></div><div class="card"><div class="ct">Year-by-Year</div><div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>Year</th><th>NPs</th><th>New</th><th>Salary</th><th>Revenue</th><th>Billing</th><th>Setup</th><th>Total Cost</th><th>Profit</th><th>Margin</th></tr></thead><tbody>${years.map(yr=>`<tr><td style="font-weight:700;color:var(--wh)">Y${yr.y}</td><td style="color:var(--pp);font-weight:600">${yr.np}</td><td style="color:var(--mt)">${yr.newHires}</td><td style="color:var(--tx)">${$f(yr.sal)}</td><td style="color:var(--bl);font-weight:600">${$k(yr.rev)}</td><td style="color:var(--mt)">${$k(yr.bf)}</td><td style="color:var(--pp)">${$k(yr.setup)}</td><td style="color:var(--am)">${$k(yr.cost)}</td><td style="color:${yr.profit>=0?'var(--ac)':'var(--rd)'};font-weight:700">${$k(yr.profit)}</td><td class="${mc(yr.margin)}">${yr.margin.toFixed(1)}%</td></tr>`).join('')}</tbody></table></div>${years.map(yr=>{const pct=(yr.rev/mxR*100).toFixed(0);return`<div style="display:grid;grid-template-columns:50px 60px 1fr 100px 80px;gap:8px;align-items:center;padding:8px;border-bottom:1px solid var(--bd)"><span style="font-family:var(--disp);font-size:16px;font-weight:700;color:var(--wh)">Y${yr.y}</span><span style="font-size:12px;color:var(--pp);font-weight:600">${yr.np} NPs</span><div class="bar" style="margin:0"><div class="tk" style="height:22px"><div class="fl" style="width:${pct}%;background:${yr.profit>=0?'var(--ac)':'var(--rd)'}">${$k(yr.rev)}</div></div></div><span style="font-size:12px;color:var(--am);text-align:right">${$k(yr.cost)}</span><span style="font-size:13px;font-weight:700;color:${yr.profit>=0?'var(--ac)':'var(--rd)'};text-align:right">${$k(yr.profit)}</span></div>`}).join('')}</div><div class="card"><div class="ct">5-Year Cumulative</div><div class="res-grid"><div class="res-card revenue"><div class="rc-label">Total Revenue</div><div class="rc-val">${$k(t5R)}</div></div><div class="res-card cost"><div class="rc-label">Total Costs</div><div class="rc-val">${$k(t5C)}</div><div class="rc-sub">Billing: ${$k(t5B)} · Setup: ${$k(t5S)}</div></div><div class="res-card ${t5P>=0?'profit':'loss'}"><div class="rc-label">Total Profit</div><div class="rc-val">${$k(t5P)}</div></div></div></div>`}
+// COMP MODEL — ABV All-Star Tiered Compensation
+function calcComp(visits){
+  let comp=0;const tiers=[];
+  if(visits<=250){comp=visits*40;tiers.push({range:'1–'+visits,rate:40,units:visits,sub:visits*40})}
+  else{
+    tiers.push({range:'1–250',rate:40,units:250,sub:250*40});comp=250*40;
+    if(visits<=300){const x=visits-250;comp+=x*45;tiers.push({range:'251–'+visits,rate:45,units:x,sub:x*45})}
+    else{
+      tiers.push({range:'251–300',rate:45,units:50,sub:50*45});comp+=50*45;
+      if(visits<=400){const x=visits-300;comp+=x*50;tiers.push({range:'301–'+visits,rate:50,units:x,sub:x*50})}
+      else{
+        tiers.push({range:'301–400',rate:50,units:100,sub:100*50});comp+=100*50;
+        const x=visits-400;comp+=x*55;tiers.push({range:'401–'+visits,rate:55,units:x,sub:x*55});
+      }
+    }
+  }
+  let bonus=0,bonusLabel='';
+  if(visits>=400){bonus=4000;bonusLabel='400+ VE'}else if(visits>=350){bonus=2500;bonusLabel='350 VE'}else if(visits>=300){bonus=1500;bonusLabel='300 VE'}
+  return{comp,bonus,bonusLabel,total:comp+bonus,annual:(comp+bonus)*12,tiers};
+}
+function initCp(){stOpts('cpSt','NY');rCp()}
+function rCp(){
+  const st=document.getElementById('cpSt').value,staff=+document.getElementById('cpStaff').value,vis=+document.getElementById('cpVis').value,intPct=+document.getElementById('cpInt').value,oh=+document.getElementById('cpOh').value,billPct=+document.getElementById('cpBill').value;
+  document.getElementById('cpStaffV').textContent=staff;document.getElementById('cpVisV').textContent=vis;document.getElementById('cpIntV').textContent=intPct+'%';document.getElementById('cpOhV').textContent=$f(oh);document.getElementById('cpBillV').textContent=billPct+'%';
+  const c=calcComp(vis);
+  const avgVE=1+(intPct/100);
+  const patients=Math.round(vis/avgVE);
+  const rpp=blended(st,['Aetna','BCBS'],intPct);
+  const mRevPerProv=rpp*patients;
+  const aRevPerProv=mRevPerProv*12;
+  const tRev=aRevPerProv*staff;
+  const billFee=tRev*(billPct/100);
+  const billPerProv=aRevPerProv*(billPct/100);
+  const tComp=c.total*staff;const tCompAnn=c.annual*staff;
+  const tOh=oh*12*staff;
+  const tCost=tCompAnn+tOh+billFee;
+  const net=tRev-tCost;const margin=tRev>0?(net/tRev*100):0;
+  const profPerProv=aRevPerProv-c.annual-oh*12-billPerProv;
+  const compPctRev=aRevPerProv>0?(c.annual/aRevPerProv*100):0;
+  const totalCostProv=c.annual+oh*12+billPerProv;
+  // Find break-even VE
+  let beVE=150;
+  for(let v=150;v<=500;v+=5){const cc=calcComp(v);const p=Math.round(v/avgVE);const rev=rpp*p*12;const bf=rev*(billPct/100);if(rev-cc.annual-oh*12-bf>=0){beVE=v;break}}
+  // Scenarios
+  const scenarios=[200,250,275,300,325,350,375,400,450].map(v=>{
+    const sc=calcComp(v);const p=Math.round(v/avgVE);const mRev=rpp*p;const aRev=mRev*12;const bf=aRev*(billPct/100);const cost=sc.annual+oh*12+bf;return{v,patients:p,compMo:sc.total,bonus:sc.bonus,compAnn:sc.annual,rev:aRev,bf,totalCost:cost,profit:aRev-cost,margin:aRev>0?((aRev-cost)/aRev*100):0};
+  });
+  // Salary equivalent comparison
+  const salaryComps=[120000,140000,150000,165000,180000,200000];
+
+  let h='';
+
+  // SECTION 1: HOW IT WORKS EXPLAINER
+  h+=`<div class="card" style="border-left:3px solid var(--pp)"><div class="ct" style="color:var(--pp)">How This Compensation Model Works</div>
+  <div style="font-size:13px;color:var(--tx);line-height:1.9">
+  <p style="margin-bottom:12px">This model replaces traditional fixed salaries with a <b style="color:var(--wh)">per-visit tiered compensation structure</b>. Providers are paid based on how many patients they see each month, measured in <b style="color:var(--pp)">Visit Equivalents (VE)</b>.</p>
+  <div style="padding:12px;background:var(--bg3);border-radius:var(--Rs);margin-bottom:12px">
+  <div style="font-size:12px;font-weight:700;color:var(--bl);margin-bottom:6px">What is a Visit Equivalent?</div>
+  <div style="font-size:12px;color:var(--tx);line-height:1.8">A <b style="color:var(--wh)">follow-up visit</b> (30 min) = <b style="color:var(--pp)">1 VE</b>. An <b style="color:var(--wh)">initial intake</b> (60 min) = <b style="color:var(--pp)">2 VE</b>, since it takes twice as long. This normalizes workload so providers are compensated fairly regardless of visit type. All tiers reset at the start of each calendar month.</div></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+  <div style="padding:12px;background:var(--bg3);border-radius:var(--Rs)">
+  <div style="font-size:12px;font-weight:700;color:var(--pp);margin-bottom:6px">Tiered Rates (per VE)</div>
+  <div style="font-size:12px;color:var(--tx);line-height:2.2">
+  <div style="display:flex;justify-content:space-between"><span>1–250 VE</span><b style="color:var(--wh)">$40</b></div>
+  <div style="display:flex;justify-content:space-between"><span>251–300 VE</span><b style="color:var(--wh)">$45</b></div>
+  <div style="display:flex;justify-content:space-between"><span>301–400 VE</span><b style="color:var(--wh)">$50</b></div>
+  <div style="display:flex;justify-content:space-between"><span>401+ VE</span><b style="color:var(--wh)">$55</b></div>
+  </div></div>
+  <div style="padding:12px;background:var(--bg3);border-radius:var(--Rs)">
+  <div style="font-size:12px;font-weight:700;color:var(--ac);margin-bottom:6px">Monthly Productivity Bonuses</div>
+  <div style="font-size:12px;color:var(--tx);line-height:2.2">
+  <div style="display:flex;justify-content:space-between"><span>Hit 300 VE</span><b style="color:var(--ac)">$1,500</b></div>
+  <div style="display:flex;justify-content:space-between"><span>Hit 350 VE</span><b style="color:var(--ac)">$2,500</b></div>
+  <div style="display:flex;justify-content:space-between"><span>Hit 400+ VE</span><b style="color:var(--ac)">$4,000</b></div>
+  </div>
+  <div style="font-size:10px;color:var(--mt);margin-top:4px">Bonuses are <b>monthly</b> totals (not cumulative). Highest qualifying tier applies.</div>
+  </div></div>
+  <p style="margin-bottom:0"><b style="color:var(--ac)">Why this works:</b> Providers who see more patients earn significantly more, which directly aligns their incentive with practice revenue. A provider hitting 300 VE/month earns $165K/yr — competitive with market salary. At 400 VE they earn $255K — exceptional comp that retains top talent while the practice profits on every additional visit.</p>
+  </div></div>`;
+
+  // SECTION 2: CURRENT CONFIGURATION BREAKDOWN
+  h+=`<div class="card" style="border-color:var(--ac20)"><div class="ct">Current Configuration — ${vis} VE / ${SN[st]}</div>
+  <div style="padding:14px;background:var(--bg3);border-radius:var(--Rs);margin-bottom:16px;border-left:3px solid var(--pp)"><div style="font-size:11px;color:var(--mt);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px">Monthly Comp Breakdown</div>
+  ${c.tiers.map(t=>`<div style="display:flex;justify-content:space-between;padding:5px 0;font-size:13px"><span style="color:var(--tx)">VE ${t.range} × <b style="color:var(--pp)">$${t.rate}</b></span><span style="color:var(--wh);font-weight:600">$${t.sub.toLocaleString()}</span></div>`).join('')}
+  ${c.bonus>0?`<div style="display:flex;justify-content:space-between;padding:6px 0;font-size:13px;border-top:1px solid var(--bd);margin-top:4px"><span style="color:var(--ac)">🏆 Monthly Bonus (${c.bonusLabel} tier)</span><span style="color:var(--ac);font-weight:700">+$${c.bonus.toLocaleString()}</span></div>`:''}
+  <div style="display:flex;justify-content:space-between;padding:8px 0;font-size:15px;border-top:2px solid var(--pp);margin-top:4px"><span style="color:var(--pp);font-weight:700">Monthly Total</span><span style="color:var(--wh);font-weight:700;font-family:var(--disp);font-size:20px">$${c.total.toLocaleString()}</span></div>
+  <div style="font-size:12px;color:var(--mt);text-align:right">Annualized: <b style="color:var(--wh)">$${c.annual.toLocaleString()}</b></div>
+  </div>
+
+  <div class="res-grid"><div class="res-card revenue"><div class="rc-label">Revenue / Provider</div><div class="rc-val">${$k(aRevPerProv)}</div><div class="rc-sub">${$f(Math.round(mRevPerProv))}/mo · ${patients} pts</div></div><div class="res-card cost"><div class="rc-label">Total Cost / Provider</div><div class="rc-val">${$k(totalCostProv)}</div><div class="rc-sub">Comp ${$k(c.annual)} · OH ${$k(oh*12)} · Bill ${$k(Math.round(billPerProv))}</div></div><div class="res-card ${profPerProv>=0?'profit':'loss'}"><div class="rc-label">Net Profit / Provider</div><div class="rc-val">${$k(profPerProv)}</div><div class="rc-sub"><span class="${mc(margin)}">${margin.toFixed(1)}% margin</span></div></div><div class="res-card neutral"><div class="rc-label">Comp % of Revenue</div><div class="rc-val">${compPctRev.toFixed(1)}%</div><div class="rc-sub">Break-even: ~${beVE} VE</div></div></div>
+
+  ${staff>1?`<div style="margin-top:16px;padding:14px;background:var(--bg3);border-radius:var(--Rs);border-left:3px solid var(--ac)"><div style="font-size:11px;color:var(--mt);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">${staff}-Provider Practice Total</div><div class="res-grid" style="margin-bottom:0"><div class="res-card revenue"><div class="rc-label">Total Revenue</div><div class="rc-val">${$k(tRev)}</div><div class="rc-sub">${$f(Math.round(tRev/12))}/mo</div></div><div class="res-card cost"><div class="rc-label">Total Cost</div><div class="rc-val">${$k(tCost)}</div><div class="rc-sub">Comp ${$k(tCompAnn)} · OH ${$k(tOh)} · Bill ${$k(Math.round(billFee))}</div></div><div class="res-card ${net>=0?'profit':'loss'}"><div class="rc-label">Practice Net Profit</div><div class="rc-val">${$k(net)}</div><div class="rc-sub">${$f(Math.round(net/12))}/mo</div></div><div class="res-card neutral"><div class="rc-label">Profit / Provider</div><div class="rc-val">${$k(profPerProv)}</div></div></div></div>`:''}</div>`;
+
+  // SECTION 3: SCENARIO TABLE
+  h+=`<div class="card"><div class="ct">Compensation Scenarios — Per Provider (${SN[st]})</div>
+  <p style="font-size:12px;color:var(--mt);margin-bottom:12px">Each row shows what a single provider earns and what the practice nets at that productivity level. Base case assumption: <b style="color:var(--pp)">300 VE/mo</b>.</p>
+  <div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>VE/Mo</th><th>~Patients</th><th>Monthly Comp</th><th>Bonus</th><th>Annual Comp</th><th>Annual Rev</th><th>Total Cost</th><th>Practice Profit</th><th>Margin</th></tr></thead><tbody>
+  ${scenarios.map(s=>{const isBase=s.v===300;const isCur=s.v===vis;return`<tr style="${isCur?'background:var(--acd)':isBase&&vis!==300?'background:var(--bg3)':''}"><td style="font-weight:700;color:var(--wh)">${s.v}${isCur?' ◀':''}${isBase&&vis!==300?' (base)':''}</td><td style="color:var(--pp)">${s.patients}</td><td style="color:var(--tx)">${$f(s.compMo)}</td><td style="color:${s.bonus>0?'var(--ac)':'var(--mt)'}">${s.bonus>0?'+$'+s.bonus.toLocaleString():'—'}</td><td style="color:var(--am);font-weight:600">${$k(s.compAnn)}</td><td style="color:var(--bl)">${$k(s.rev)}</td><td style="color:var(--am)">${$k(s.totalCost)}</td><td style="color:${s.profit>=0?'var(--ac)':'var(--rd)'};font-weight:700">${$k(s.profit)}</td><td class="${mc(s.margin)}">${s.margin.toFixed(1)}%</td></tr>`}).join('')}
+  </tbody></table></div></div>`;
+
+  // SECTION 4: COMP MODEL vs FIXED SALARY
+  h+=`<div class="card"><div class="ct">Comp Model vs. Fixed Salary — Who Wins?</div>
+  <p style="font-size:12px;color:var(--mt);margin-bottom:12px">At ${vis} VE/mo, this model pays <b style="color:var(--wh)">$${c.annual.toLocaleString()}/yr</b>. How does that compare to offering a fixed salary?</p>
+  <div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>Fixed Salary</th><th>ABV Model (${vis} VE)</th><th>Provider Diff</th><th>Practice Profit (Salary)</th><th>Practice Profit (ABV)</th><th>Practice Wins By</th></tr></thead><tbody>
+  ${salaryComps.map(sal=>{const provDiff=c.annual-sal;const profSal=aRevPerProv-sal-oh*12-billPerProv;return`<tr><td style="color:var(--wh);font-weight:600">${$f(sal)}</td><td style="color:var(--pp);font-weight:600">${$f(c.annual)}</td><td style="color:${provDiff>=0?'var(--ac)':'var(--rd)'}">${provDiff>=0?'+':''}${$f(provDiff)}</td><td style="color:${profSal>=0?'var(--bl)':'var(--rd)'}">${$k(profSal)}</td><td style="color:${profPerProv>=0?'var(--ac)':'var(--rd)'}">${$k(profPerProv)}</td><td style="color:${profPerProv>profSal?'var(--rd)':'var(--ac)'};font-weight:700">${$k(Math.abs(profPerProv-profSal))} ${profPerProv>=profSal?'less':'more'}</td></tr>`}).join('')}
+  </tbody></table></div>
+  <div style="font-size:11px;color:var(--mt);margin-top:8px;padding:8px;background:var(--bg3);border-radius:var(--Rs)">At the <b>300 VE base case</b>, the provider earns $165K — equivalent to the market salary. Above 300, providers earn more but the practice still profits on each incremental visit because revenue per VE exceeds the comp rate. The model becomes more favorable for the practice as patient volume grows.</div></div>`;
+
+  // SECTION 5: MULTI-PROVIDER SCALING
+  h+=`<div class="card"><div class="ct">Scaling — Practice Net at ${vis} VE/Provider</div>
+  <div class="tw" style="border:none"><table class="bd-table"><thead><tr><th>Providers</th><th>Total Revenue</th><th>Total Comp</th><th>Total Overhead</th><th>Billing</th><th>Practice Profit</th><th>Monthly Cash</th></tr></thead><tbody>
+  ${[1,2,3,5,8,10,15,20,25].map(n=>{const rv=aRevPerProv*n,cp=c.annual*n,ov=oh*12*n,bf=rv*(billPct/100),tc=cp+ov+bf,pr=rv-tc;const isCur=n===staff;return`<tr style="${isCur?'background:var(--acd)':''}"><td style="font-weight:700;color:var(--wh)">${n}${isCur?' ◀':''}</td><td style="color:var(--bl)">${$k(rv)}</td><td style="color:var(--am)">${$k(cp)}</td><td style="color:var(--mt)">${$k(ov)}</td><td style="color:var(--mt)">${$k(bf)}</td><td style="color:${pr>=0?'var(--ac)':'var(--rd)'};font-weight:700">${$k(pr)}</td><td style="color:var(--tx)">${$f(Math.round(pr/12))}</td></tr>`}).join('')}
+  </tbody></table></div></div>`;
+
+  // VERSION STAMP
+  h+=`<div style="font-size:10px;color:var(--mt);opacity:.5;text-align:right;padding:8px">ABV Comp Model V1 · February 2026</div>`;
+
+  document.getElementById('cpResults').innerHTML=h;
+}
+// INIT ALL
+rO();bHF();rH();bRF();rRk();pCD();bSF();rSC();initP();initRv();initPt();initRm();initSc();initGr();initCp();rDA();
+</script>
+<footer style="margin-top:40px;padding:32px 32px;border-top:1px solid rgba(255,255,255,.06);background:rgba(0,0,0,.15);text-align:center">
+<div style="font-size:12px;color:rgba(255,255,255,.35);margin-bottom:16px">Joseph Psychiatry PLLC · Practice Intelligence Platform · Confidential</div>
+<div style="font-size:11px;color:rgba(255,255,255,.25);line-height:1.8;max-width:800px;margin:0 auto 16px">Reimbursement rates sourced from Headway for MD-level providers, February 2026. All revenue projections and scaling models assume NP/PA staffing at 85% of MD reimbursement. These figures do not reflect direct credentialing rates, which are typically lower than Headway rates. Billing fee, overhead, and malpractice estimates are approximations and may vary by carrier, state, and provider history.</div>
+<div style="font-size:11px;color:rgba(255,255,255,.25);line-height:1.8">This platform is a strategic planning tool, not financial or legal advice. If you don't like it, kiss my ass. — Abe Varughese, COO</div>
+</footer>
+</body>
+</html>
