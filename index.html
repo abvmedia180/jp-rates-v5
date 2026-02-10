@@ -119,13 +119,15 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:3px;bac
 .scn-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--bd);font-size:13px}
 .scn-row:last-child{border:none}
 .fl2{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--mt);margin-bottom:6px}
-#sec-deep{overflow-x:hidden;max-width:100%}
+#sec-deep{max-width:100%}
 #sec-deep .card{overflow:hidden;max-width:100%}
-#sec-deep table{width:100%;table-layout:fixed;border-collapse:collapse}
+#sec-deep table{width:100%;border-collapse:collapse}
 #sec-deep td,#sec-deep th{word-wrap:break-word;overflow-wrap:break-word;white-space:normal}
 #sec-deep .bd-table{table-layout:auto}
 #sec-deep .bd-table td,#sec-deep .bd-table th{white-space:normal;word-wrap:break-word;overflow-wrap:break-word}
 #sec-deep .bd-table td.wrap{white-space:normal;max-width:400px;font-size:11px}
+.deep-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:8px}
+.deep-scroll table{min-width:500px}
 .scroll-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--bd);border-radius:var(--Rs);margin-bottom:8px}
 .scroll-wrap::-webkit-scrollbar{height:6px}
 .scroll-wrap::-webkit-scrollbar-track{background:var(--bg4);border-radius:3px}
@@ -142,7 +144,7 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:3px;bac
 /* Salary input inline */
 .sal-input{background:var(--bg4);border:1px solid var(--bd);border-radius:4px;padding:5px 8px;font-size:13px;font-weight:600;color:var(--wh);width:100px;font-family:var(--sans);text-align:right}
 .sal-input:focus{border-color:var(--ac);outline:none}
-@media(max-width:768px){.hero{padding:32px 16px 24px}.hero h1{font-size:1.6rem}.sbs,.scn-grid{grid-template-columns:1fr;gap:10px}.sbsv,.scn-vs{padding:6px}.cg{grid-template-columns:1fr}.sg{grid-template-columns:repeat(2,1fr)}.res-grid{grid-template-columns:repeat(2,1fr)}.port-row{grid-template-columns:1fr}}
+@media(max-width:768px){.hero{padding:32px 16px 24px}.hero h1{font-size:1.6rem}.sbs,.scn-grid{grid-template-columns:1fr;gap:10px}.sbsv,.scn-vs{padding:6px}.cg{grid-template-columns:1fr}.sg{grid-template-columns:repeat(2,1fr)}.res-grid{grid-template-columns:repeat(2,1fr)}.port-row{grid-template-columns:1fr}#sec-deep table{font-size:11px}#sec-deep td,#sec-deep th{padding:6px 4px}}
 </style>
 </head>
 <body>
@@ -795,7 +797,7 @@ function rDA(){
     const isNY=s==='NY';
     h+=`<div style="margin-bottom:20px;padding:16px;background:var(--bg3);border-radius:var(--Rs);border-left:3px solid var(--pp)">`;
     h+=`<div style="font-size:16px;font-weight:700;color:var(--wh);margin-bottom:12px">${r.name} — PA Deep Dive</div>`;
-    h+=`<table style="width:100%;border-collapse:collapse;font-size:12px;margin-bottom:16px">`;
+    h+=`<div class="deep-scroll"><table style="width:100%;border-collapse:collapse;font-size:12px;margin-bottom:16px">`;
     h+=`<thead><tr><th style="padding:8px;text-align:left;color:var(--mt);border-bottom:2px solid var(--bd);width:20%">Factor</th><th style="padding:8px;text-align:left;color:var(--bl);border-bottom:2px solid var(--bd);width:40%">NP</th><th style="padding:8px;text-align:left;color:var(--pp);border-bottom:2px solid var(--bd);width:40%">PA</th></tr></thead><tbody>`;
     h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700">Scope</td><td style="padding:8px;color:var(--br)">${r.scope}</td><td style="padding:8px;color:var(--br)">${pa.scope}</td></tr>`;
     const npCS2=isNY?'✅ Sch II-V (FPA)':'🚫 No Sch II (III-V only)';
@@ -807,7 +809,7 @@ function rDA(){
     h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700">Salary</td><td style="padding:8px;color:var(--br)">${isNY?'$130K-$170K':'$120K-$160K'}</td><td style="padding:8px;color:var(--br)">${pa.salary.split('.')[0]}</td></tr>`;
     h+=`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px;color:var(--mt);font-weight:700">Malpractice</td><td style="padding:8px;color:var(--br)">${r.malpNP||'—'}/yr</td><td style="padding:8px;color:var(--br)">${pa.malpractice}</td></tr>`;
     h+=`<tr><td style="padding:8px;color:var(--mt);font-weight:700">Sources</td><td colspan="2" style="padding:8px;font-size:11px;color:var(--mt)">${pa.scopeSrc}; ${pa.csSrc}; ${pa.ratioSrc}</td></tr>`;
-    h+=`</tbody></table>`;
+    h+=`</tbody></table></div>`;
     h+=`<div style="padding:12px;background:var(--bg4);border-radius:var(--Rs);border-left:2px solid var(--pp)"><b style="color:var(--pp);font-size:12px">VERDICT:</b><div style="font-size:12px;color:var(--br);margin-top:6px;line-height:1.7">${pa.verdict}</div></div></div>`;
   });
   h+=`<div style="padding:14px;background:var(--bg4);border:1px solid var(--pp);border-radius:var(--Rs);margin-top:12px"><div style="font-size:13px;font-weight:700;color:var(--pp);margin-bottom:8px">PA vs NP — Bottom Line</div><div style="font-size:13px;color:var(--tx);line-height:1.8"><b style="color:var(--wh)">New York:</b> NPs are the clear winner for telehealth scalability. FPA means no supervision overhead, no ratio limits. PAs can prescribe Sch II but require supervision (1:6 ratio cap). For 100% telehealth, NP independence eliminates bottlenecks.<br><br><b style="color:var(--wh)">Texas:</b> PAs offer <b style="color:var(--rd)">NO advantage</b> over NPs. Both face the identical Sch II prohibition, same prescriptive authority agreement, same 1:7 combined ratio. The only solution for stimulant prescribing in TX is an MD — regardless of whether support staff is PAs or NPs.<br><br><b style="color:var(--ac)">Recommendation:</b> Prioritize NP hiring for both states. In NY, NPs provide maximum independence. In TX, NPs and PAs are functionally equivalent — but larger NP talent pool gives NPs a practical hiring edge.</div></div></div>`;
